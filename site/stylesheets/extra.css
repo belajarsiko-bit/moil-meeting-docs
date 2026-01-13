@@ -9,24 +9,33 @@
 }
 
 /* 
-   Hide the Site Title Text ("Moil Meeting") 
-   BUT keep the container if it holds the version dropdown 
+   Container for Title/Topic.
+   We KEEP this visible because the Version Dropdown might live here or nearby.
+   We place it at order 25 (Right side).
 */
 .md-header__title {
   display: flex !important;
-  /* Allow flex children */
   align-items: center;
   margin: 0;
   padding: 0;
   width: auto;
-  /* Don't take up full width */
-  order: 20;
-  /* Place it with the right-side actions for now */
+  order: 25;
+  /* Debugging: See if this container takes space */
+  /* border: 1px dashed yellow; */
 }
 
-/* Hide the actual text spans */
-.md-header__topic {
+/* 
+   Hide ONLY the text spans of the title.
+   Do NOT use display:none on the parent topic, just the text.
+*/
+.md-header__topic .md-ellipsis {
   display: none !important;
+}
+
+/* Ensure the topic container itself is visible (in case it wraps version) */
+.md-header__topic {
+  display: flex !important;
+  align-items: center;
 }
 
 /* LOGO -> Left (Order 0) */
@@ -46,42 +55,43 @@
 .md-search {
   order: 10;
   flex-grow: 1;
-  /* Stretch to fill space */
   max-width: 800px;
-  /* Limit max width */
   margin: 0 2rem !important;
-  /* Spacing */
   display: block !important;
 }
 
 /* ACTIONS -> Right */
-/* Theme Toggle */
-.md-header__option {
-  order: 30;
-  /* Far Right */
-  margin-left: 0.5rem;
-}
 
 /* Version Dropdown */
-/* This is often inside md-header__title, but we can try to target it if it is direct.
-   If it's inside md-header__title, we rely on md-header__title order.
-   But typically mike injects it as a sibling or child. 
-   We'll target the class specifically just in case.
-*/
 .md-version {
   order: 25;
-  /* Between Search (10) and Theme (30) */
+  /* Same group as title */
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: flex !important;
   align-items: center;
   height: auto;
+
+  /* FORCE VISIBILITY & COLOR */
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: inherit !important;
+  z-index: 100;
+
+  /* Debugging: Red border to spot it */
+  border: 2px solid red;
+  min-width: 50px;
 }
 
-/* GitHub Repo Link (if present) */
+/* Theme Toggle */
+.md-header__option {
+  order: 30;
+  margin-left: 0.5rem;
+}
+
+/* Repo Link */
 .md-header__source {
   order: 40;
-  /* Furthest Right */
   margin-left: 0.5rem;
 }
 
@@ -90,7 +100,6 @@
 .md-search__inner {
   background-color: rgba(0, 0, 0, 0.07) !important;
   border-radius: 99px !important;
-  /* Pill shape */
   padding: 2px 0;
   width: 100%;
 }
@@ -110,7 +119,6 @@
 
 [data-md-color-scheme="slate"] .md-search__inner {
   background-color: rgba(255, 255, 255, 0.15) !important;
-  /* Dark mode bg */
 }
 
 /* 3. GLOBAL ADJUSTMENTS */
