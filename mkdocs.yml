@@ -1,0 +1,69 @@
+site_name: Moil Meeting Docs
+site_url: https://example.com/moil
+repo_url: https://github.com/username/moil-meeting
+repo_name: Moil Meeting
+
+# Konfigurasi Tema Modern
+theme:
+  name: material
+  language: en
+  palette:
+    # Mode Gelap (Default - Keren untuk presentasi)
+    - scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Mode Terang
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs        # Menu navigasi horizontal
+    - navigation.sections    # Grouping menu
+    - navigation.top         # Tombol 'Back to Top'
+    - search.suggest         # Search auto-complete
+    - content.code.copy      # Tombol copy code
+
+# Wajib untuk Versioning (Mike)
+extra:
+  version:
+    provider: mike
+
+# Plugin Tambahan
+plugins:
+  - search
+
+# Struktur Menu (Sesuai file yang sudah kita buat)
+nav:
+  - Home: index.md
+  - Release Notes:
+    - Overview: release-notes/overview.md
+    - Highlights: release-notes/highlights.md
+    - New Features: release-notes/new-features.md
+    - Improvements: release-notes/improvements.md
+    - Bug Fixes: release-notes/bug-fixes.md
+  - Definition:
+    - What is Moil: definition/what-is-moil.md
+    - Key Features: definition/key-features.md
+    - Fisheye Tech: definition/fisheye-tech.md
+  - Modes:
+    - Original Mode: modes/original.md
+    - Discussion Mode: modes/discussion.md
+    - Global Mode: modes/global.md
+    - Patrol Mode: modes/patrol.md
+    - Presentation Mode: modes/presentation.md
+    - AI Tracking: modes/ai-tracking.md
+  - Installation:
+    - Requirements: install/requirements.md
+    - User Guide: install/user-guide.md
+    - Developer Guide: install/dev-guide.md
+  - Usage:
+    - Quick Start: usage/quick-start.md
+    - Operations: usage/operations.md
+    - Camera Control: usage/camera-control.md
+    - Recording: usage/recording.md
