@@ -5,6 +5,7 @@ repo_name: Moil Meeting
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     - scheme: slate
