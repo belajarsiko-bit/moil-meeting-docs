@@ -1,9 +1,3 @@
-# Moil Meeting (Versi 2.0)
-
-!!! tip "Update Terbaru"
-    Anda sedang membaca dokumentasi untuk **Moil Meeting v2.0**.
-    Fitur **AI Tracking** telah ditingkatkan di versi ini.
-
 # Welcome to Moil Meeting
 
 **Moil Meeting** is an innovative video conferencing solution leveraging **MoilApp’s high-quality fisheye image processing technology**.
