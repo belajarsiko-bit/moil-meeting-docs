@@ -1,0 +1,151 @@
+/* docs/stylesheets/extra.css */
+
+/* 1. LAYOUT & ORDERING */
+.md-header__inner {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 100%;
+}
+
+/* 
+   Container for Title/Topic.
+   The version dropdown lives inside here usually.
+   MOVED TO RIGHT OF REPO (Order 50)
+*/
+.md-header__title {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  order: 50;
+  /* Moved to far right */
+  height: 100%;
+}
+
+/* Hide ONLY the text spans of the title. */
+.md-header__topic .md-ellipsis {
+  display: none !important;
+}
+
+/* Ensure the topic container itself is visible */
+.md-header__topic {
+  display: flex !important;
+  align-items: center;
+  height: 100%;
+}
+
+/* LOGO -> Left (Order 0) */
+.md-header__button.md-logo {
+  order: 0;
+  margin-right: 1rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3rem;
+  width: auto;
+  max-height: 48px;
+}
+
+/* SEARCH -> Center (Order 10) */
+.md-search {
+  order: 10;
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 2rem !important;
+  display: block !important;
+}
+
+/* ACTIONS -> Right */
+
+/* Theme Toggle (Order 30) */
+.md-header__option {
+  order: 30;
+  margin-left: 0.5rem;
+}
+
+/* Repo Link (Order 40) */
+.md-header__source {
+  order: 40;
+  margin-left: 0.5rem;
+}
+
+/* Version Dropdown (Order 50 - Match Title) */
+.md-version {
+  /* It is often inside header__title, but we target it cleanly */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  height: auto;
+  margin: 0 0 0 1rem;
+  /* Adjust margin for end position */
+  order: 50;
+
+  /* Reset any potential weird margins */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  top: 0 !important;
+
+  /* Styling to make it look like a button/dropdown */
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: inherit !important;
+  z-index: 100;
+}
+
+/* Hide Version Dropdown when Search is Active/Focused */
+.md-header__inner:has(.md-search__input:focus) .md-version {
+  display: none !important;
+}
+
+/* Add "Version : " Prefix with COLON */
+.md-version__button::before {
+  content: "Version : ";
+  margin-right: 0.4em;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+/* Make the version text cleaner and assure alignment */
+.md-version__button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  line-height: inherit;
+  padding-top: 2px;
+}
+
+
+/* 2. SEARCH BAR STYLING */
+.md-search__inner {
+  background-color: rgba(0, 0, 0, 0.07) !important;
+  border-radius: 99px !important;
+  padding: 2px 0;
+  width: 100%;
+}
+
+.md-search__input {
+  width: 100%;
+  background: transparent !important;
+  height: 40px !important;
+  padding-left: 48px !important;
+  font-size: 1rem !important;
+  color: inherit !important;
+}
+
+.md-search__icon {
+  left: 14px !important;
+}
+
+[data-md-color-scheme="slate"] .md-search__inner {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 3. GLOBAL ADJUSTMENTS */
+:root {
+  --md-header-height: 4rem;
+}
