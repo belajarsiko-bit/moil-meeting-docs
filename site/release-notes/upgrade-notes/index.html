@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/moil/Version 1.x/usage/quick-start/">
+        <link rel="canonical" href="https://example.com/moil/Version 1.x/release-notes/upgrade-notes/">
       
       
-        <link rel="prev" href="../../install/dev-guide/">
+        <link rel="prev" href="../bug-fixes/">
       
       
-        <link rel="next" href="../operations/">
+        <link rel="next" href="../getting-started/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Quick Start - Moil Meeting Docs</title>
+        <title>Upgrade Notes - Moil Meeting Docs</title>
       
     
     
@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#upgrade-notes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -112,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quick Start
+              Upgrade Notes
             
           </span>
         </div>
@@ -283,18 +288,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -315,7 +322,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -333,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -361,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/highlights/" class="md-nav__link">
+      <a href="../highlights/" class="md-nav__link">
         
   
   
@@ -389,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/new-features/" class="md-nav__link">
+      <a href="../new-features/" class="md-nav__link">
         
   
   
@@ -417,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/improvements/" class="md-nav__link">
+      <a href="../improvements/" class="md-nav__link">
         
   
   
@@ -445,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/bug-fixes/" class="md-nav__link">
+      <a href="../bug-fixes/" class="md-nav__link">
         
   
   
@@ -453,6 +460,198 @@
     
   
     Bug Fixes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrade Notes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrade Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-to-latest-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading to Latest Version
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading to Latest Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Compatibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
   
 
     
@@ -534,7 +733,7 @@
   <span class="md-ellipsis">
     
   
-    What is Moil
+    What is the Moil Meeting
   
 
     
@@ -590,7 +789,7 @@
   <span class="md-ellipsis">
     
   
-    Fisheye Tech
+    What is Fisheye Lens Technology?
   
 
     
@@ -894,7 +1093,7 @@
   <span class="md-ellipsis">
     
   
-    Requirements
+    Operating System Requirements
   
 
     
@@ -922,7 +1121,7 @@
   <span class="md-ellipsis">
     
   
-    User Guide
+    User Installation Guide
   
 
     
@@ -950,7 +1149,7 @@
   <span class="md-ellipsis">
     
   
-    Developer Guide
+    Developer Installation Guide
   
 
     
@@ -975,102 +1174,17 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Moil Meeting of Usage
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Moil Meeting of Usage
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Quick Start
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../operations/" class="md-nav__link">
+      <a href="../../usage/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Operations
+    Moil Meeting Of Usage
   
 
     
@@ -1079,70 +1193,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera-control/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Camera Control
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recording/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Recording
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1201,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operations/overview-of-apps.md" class="md-nav__link">
+      <a href="../../operations/overview-of-apps/" class="md-nav__link">
         
   
   
@@ -1229,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operations/quick-start.md" class="md-nav__link">
+      <a href="../../operations/quick-start/" class="md-nav__link">
         
   
   
@@ -1257,14 +1307,210 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operations/start-camera.md" class="md-nav__link">
+      <a href="../../operations/start-camera/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Start Camera
+    Start Camera and Stop Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Recording and Stop Recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/original-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Original Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/discussion-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discussion Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/global-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/patrol-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patrol Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/presentation-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presentation Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/configuration-panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration Panel
   
 
     
@@ -1302,6 +1548,77 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-to-latest-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading to Latest Version
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading to Latest Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Compatibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1321,9 +1638,42 @@
   
 
 
-  <h1>Quick Start</h1>
-
-
+<h1 id="upgrade-notes">Upgrade Notes</h1>
+<p>This section provides important notes for upgrading from previous versions of Moil Meeting.</p>
+<h2 id="upgrading-to-latest-version">Upgrading to Latest Version</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Ensure you have backed up your configuration files</li>
+<li>Check system requirements for the new version</li>
+</ul>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<ul>
+<li>None at this time</li>
+</ul>
+<h3 id="migration-steps">Migration Steps</h3>
+<ol>
+<li>Back up your existing installation</li>
+<li>Download the latest version</li>
+<li>Follow the installation guide</li>
+<li>Restore your configuration files</li>
+</ol>
+<h2 id="version-compatibility">Version Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>From Version</th>
+<th>To Version</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.x</td>
+<td>2.x</td>
+<td>Full compatibility</td>
+</tr>
+</tbody>
+</table>
 
 
 

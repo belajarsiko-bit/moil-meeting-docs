@@ -53,7 +53,55 @@
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+         <loc>https://example.com/moil/Version 1.x/operations/configuration-panel/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/discussion-mode/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/global-mode/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/original-mode/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/overview-of-apps/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/patrol-mode/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/presentation-mode/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/quick-start/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/recording/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/operations/start-camera/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
          <loc>https://example.com/moil/Version 1.x/release-notes/bug-fixes/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/release-notes/changelog/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/moil/Version 1.x/release-notes/getting-started/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
@@ -73,19 +121,11 @@
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/Version 1.x/usage/camera-control/</loc>
+         <loc>https://example.com/moil/Version 1.x/release-notes/upgrade-notes/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/Version 1.x/usage/operations/</loc>
-         <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/moil/Version 1.x/usage/quick-start/</loc>
-         <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/moil/Version 1.x/usage/recording/</loc>
+         <loc>https://example.com/moil/Version 1.x/usage/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
 </urlset>
