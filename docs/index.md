@@ -1,5 +1,3 @@
-# Moil Meeting V2.0
-
 # Welcome to Moil Meeting
 
 **Moil Meeting** is an innovative video conferencing solution leveraging **MoilApp’s high-quality fisheye image processing technology**.

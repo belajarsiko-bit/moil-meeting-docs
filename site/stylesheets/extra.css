@@ -4,21 +4,26 @@
 .md-header__inner {
   display: flex !important;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
+  /* Ensure vertical center */
   width: 100%;
 }
 
 /* 
    Container for Title/Topic.
-   Kept transparently for structure.
+   The version dropdown lives inside here usually.
 */
 .md-header__title {
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
+  /* Vertically center the version dropdown */
+  justify-content: center;
   margin: 0;
   padding: 0;
   width: auto;
   order: 25;
+  height: 100%;
+  /* Match header height to help alignment */
 }
 
 /* Hide ONLY the text spans of the title. */
@@ -30,6 +35,7 @@
 .md-header__topic {
   display: flex !important;
   align-items: center;
+  height: 100%;
 }
 
 /* LOGO -> Left (Order 0) */
@@ -58,32 +64,47 @@
 
 /* Version Dropdown */
 .md-version {
-  order: 25;
-  margin-left: 1rem;
-  margin-right: 0.5rem;
+  /* It is often inside header__title, but we target it cleanly */
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center;
   height: auto;
+  margin: 0 1rem;
+  /* Spacing */
 
-  /* FORCE VISIBILITY & COLOR */
+  /* Reset any potential weird margins */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  top: 0 !important;
+
+  /* Styling to make it look like a button/dropdown */
   visibility: visible !important;
   opacity: 1 !important;
   color: inherit !important;
   z-index: 100;
+
+  /* Optional: Add a slight background/border if requested "form" style, 
+     but keeping it simple first as per "Version : 2.0" request */
 }
 
-/* Add "Version " Prefix */
+/* Add "Version : " Prefix with COLON */
 .md-version__button::before {
-  content: "Version ";
-  margin-right: 0.3em;
+  content: "Version : ";
+  margin-right: 0.4em;
   font-weight: normal;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-/* Make the version text cleaner */
+/* Make the version text cleaner and assure alignment */
 .md-version__button {
   font-weight: bold;
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  line-height: inherit;
+  /* Prevent weird offsets */
+  padding-top: 2px;
+  /* Micro adjustment if needed */
 }
 
 /* Theme Toggle */
