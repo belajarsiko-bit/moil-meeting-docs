@@ -32,6 +32,5 @@ jobs:
 
       - name: Deploy Documentation
         run: |
-          # Ini akan mengupdate versi 'dev' (development) dan menjadikannya default
-          # Kamu bisa mengganti 'dev' menjadi '2.0' jika ingin langsung update versi 2.0
-          mike deploy --push --update-aliases 2.0 latest
+
+          mike deploy --push --update-aliases 1.x
