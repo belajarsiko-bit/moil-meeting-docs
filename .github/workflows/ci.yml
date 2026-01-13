@@ -1,0 +1,37 @@
+name: Publish Docs
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Wajib 0 agar history Git terbawa untuk 'mike'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install Dependencies
+        run: |
+          pip install mkdocs-material mike
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy Documentation
+        run: |
+          # Ini akan mengupdate versi 'dev' (development) dan menjadikannya default
+          # Kamu bisa mengganti 'dev' menjadi '2.0' jika ingin langsung update versi 2.0
+          mike deploy --push --update-aliases 2.0 latest
