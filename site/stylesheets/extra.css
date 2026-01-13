@@ -1,0 +1,91 @@
+/* docs/stylesheets/extra.css */
+
+/* 1. LAYOUT & ORDERING */
+.md-header__inner {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hide Site Title */
+.md-header__title {
+  display: none !important;
+}
+
+/* LOGO -> Left (Order 0) */
+.md-header__button.md-logo {
+  order: 0;
+  margin-right: 1rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3rem;
+  /* Larger logo */
+  width: auto;
+  max-height: 48px;
+}
+
+/* SEARCH -> Center (Order 1) */
+.md-search {
+  order: 1;
+  flex-grow: 1;
+  /* Takes available space */
+  max-width: 800px;
+  /* Limit width */
+  margin: 0 2rem !important;
+  /* Center visually with spacing */
+  display: block !important;
+  /* Force visible */
+}
+
+/* ACTIONS -> Right (Order 2) */
+.md-header__option,
+.md-header__source,
+/* GitHub Repo Link */
+.md-version {
+  order: 2;
+  margin-left: 0.5rem;
+}
+
+/* 2. SEARCH BAR STYLING (Laravel-like) */
+
+/* The Search Container (Pill Shape) */
+.md-search__inner {
+  background-color: rgba(0, 0, 0, 0.07) !important;
+  border-radius: 99px !important;
+  /* Fully rounded */
+  padding: 2px 0;
+  width: 100%;
+}
+
+/* The Input Field */
+.md-search__input {
+  width: 100%;
+  background: transparent !important;
+  height: 40px !important;
+  /* Taller touch target */
+  padding-left: 48px !important;
+  /* Space for search icon */
+  font-size: 1rem !important;
+  /* Readable text */
+  color: inherit !important;
+}
+
+/* The Search Icon */
+.md-search__icon {
+  left: 14px !important;
+  /* Adjust for rounded corners */
+}
+
+/* Dark Mode Specifics */
+[data-md-color-scheme="slate"] .md-search__inner {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 3. GLOBAL ADJUSTMENTS */
+:root {
+  --md-header-height: 4rem;
+  /* Taller header */
+}
