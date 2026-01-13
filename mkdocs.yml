@@ -44,10 +44,13 @@ nav:
     - New Features: release-notes/new-features.md
     - Improvements: release-notes/improvements.md
     - Bug Fixes: release-notes/bug-fixes.md
+    - Upgrade Notes: release-notes/upgrade-notes.md
+    - Getting Started: release-notes/getting-started.md
+    - Changelog: release-notes/changelog.md
   - Definition and Overview:
-    - What is Moil: definition/what-is-moil.md
+    - What is the Moil Meeting: definition/what-is-moil.md
     - Key Features: definition/key-features.md
-    - Fisheye Tech: definition/fisheye-tech.md
+    - What is Fisheye Lens Technology?: definition/fisheye-tech.md
   - Modes:
     - Original Mode: modes/original.md
     - Discussion Mode: modes/discussion.md
@@ -56,15 +59,18 @@ nav:
     - Presentation Mode: modes/presentation.md
     - AI Tracking: modes/ai-tracking.md
   - Moil Meeting Installation Guide:
-    - Requirements: install/requirements.md
-    - User Guide: install/user-guide.md
-    - Developer Guide: install/dev-guide.md
-  - Moil Meeting of Usage:
-    - Quick Start: usage/quick-start.md
-    - Operations: usage/operations.md
-    - Camera Control: usage/camera-control.md
-    - Recording: usage/recording.md
+    - Operating System Requirements: install/requirements.md
+    - User Installation Guide: install/user-guide.md
+    - Developer Installation Guide: install/dev-guide.md
+  - Moil Meeting Of Usage: usage/index.md
   - Operations of the Moil Meeting:
     - Overview of Apps: operations/overview-of-apps.md
     - Quick Start: operations/quick-start.md
-    - Start Camera: operations/start-camera.md
+    - Start Camera and Stop Camera: operations/start-camera.md
+    - Start Recording and Stop Recording: operations/recording.md
+    - Original Mode: operations/original-mode.md
+    - Discussion Mode: operations/discussion-mode.md
+    - Global Mode: operations/global-mode.md
+    - Patrol Mode: operations/patrol-mode.md
+    - Presentation Mode: operations/presentation-mode.md
+    - Configuration Panel: operations/configuration-panel.md
