@@ -8,9 +8,17 @@
   width: 100%;
 }
 
-/* Hide Site Title */
-.md-header__title {
+/* Hide Site Title TEXT only */
+.md-header__topic {
   display: none !important;
+}
+
+/* Ensure Title Container doesn't break layout but exists */
+.md-header__title {
+  display: contents !important;
+  /* let children participate in flex if needed, or just occupy no box */
+  margin: 0;
+  padding: 0;
 }
 
 /* LOGO -> Left (Order 0) */
@@ -47,6 +55,9 @@
 .md-version {
   order: 2;
   margin-left: 0.5rem;
+  display: flex !important;
+  /* Force visibility */
+  align-items: center;
 }
 
 /* 2. SEARCH BAR STYLING (Laravel-like) */
