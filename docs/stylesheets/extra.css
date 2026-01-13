@@ -8,17 +8,25 @@
   width: 100%;
 }
 
-/* Hide Site Title TEXT only */
-.md-header__topic {
-  display: none !important;
-}
-
-/* Ensure Title Container doesn't break layout but exists */
+/* 
+   Hide the Site Title Text ("Moil Meeting") 
+   BUT keep the container if it holds the version dropdown 
+*/
 .md-header__title {
-  display: contents !important;
-  /* let children participate in flex if needed, or just occupy no box */
+  display: flex !important;
+  /* Allow flex children */
+  align-items: center;
   margin: 0;
   padding: 0;
+  width: auto;
+  /* Don't take up full width */
+  order: 20;
+  /* Place it with the right-side actions for now */
+}
+
+/* Hide the actual text spans */
+.md-header__topic {
+  display: none !important;
 }
 
 /* LOGO -> Left (Order 0) */
@@ -30,73 +38,82 @@
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   height: 3rem;
-  /* Larger logo */
   width: auto;
   max-height: 48px;
 }
 
-/* SEARCH -> Center (Order 1) */
+/* SEARCH -> Center (Order 10) */
 .md-search {
-  order: 1;
+  order: 10;
   flex-grow: 1;
-  /* Takes available space */
+  /* Stretch to fill space */
   max-width: 800px;
-  /* Limit width */
+  /* Limit max width */
   margin: 0 2rem !important;
-  /* Center visually with spacing */
+  /* Spacing */
   display: block !important;
-  /* Force visible */
 }
 
-/* ACTIONS -> Right (Order 2) */
-.md-header__option,
-.md-header__source,
-/* GitHub Repo Link */
-.md-version {
-  order: 2;
+/* ACTIONS -> Right */
+/* Theme Toggle */
+.md-header__option {
+  order: 30;
+  /* Far Right */
   margin-left: 0.5rem;
-  display: flex !important;
-  /* Force visibility */
-  align-items: center;
 }
 
-/* 2. SEARCH BAR STYLING (Laravel-like) */
+/* Version Dropdown */
+/* This is often inside md-header__title, but we can try to target it if it is direct.
+   If it's inside md-header__title, we rely on md-header__title order.
+   But typically mike injects it as a sibling or child. 
+   We'll target the class specifically just in case.
+*/
+.md-version {
+  order: 25;
+  /* Between Search (10) and Theme (30) */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex !important;
+  align-items: center;
+  height: auto;
+}
 
-/* The Search Container (Pill Shape) */
+/* GitHub Repo Link (if present) */
+.md-header__source {
+  order: 40;
+  /* Furthest Right */
+  margin-left: 0.5rem;
+}
+
+
+/* 2. SEARCH BAR STYLING */
 .md-search__inner {
   background-color: rgba(0, 0, 0, 0.07) !important;
   border-radius: 99px !important;
-  /* Fully rounded */
+  /* Pill shape */
   padding: 2px 0;
   width: 100%;
 }
 
-/* The Input Field */
 .md-search__input {
   width: 100%;
   background: transparent !important;
   height: 40px !important;
-  /* Taller touch target */
   padding-left: 48px !important;
-  /* Space for search icon */
   font-size: 1rem !important;
-  /* Readable text */
   color: inherit !important;
 }
 
-/* The Search Icon */
 .md-search__icon {
   left: 14px !important;
-  /* Adjust for rounded corners */
 }
 
-/* Dark Mode Specifics */
 [data-md-color-scheme="slate"] .md-search__inner {
   background-color: rgba(255, 255, 255, 0.15) !important;
+  /* Dark mode bg */
 }
 
 /* 3. GLOBAL ADJUSTMENTS */
 :root {
   --md-header-height: 4rem;
-  /* Taller header */
 }
