@@ -33,4 +33,4 @@ jobs:
       - name: Deploy Documentation
         run: |
 
-          mike deploy --push --update-aliases 1.x
+          mike deploy --push --update-aliases 'Version 1.x'
