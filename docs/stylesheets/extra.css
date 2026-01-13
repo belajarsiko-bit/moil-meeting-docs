@@ -10,8 +10,7 @@
 
 /* 
    Container for Title/Topic.
-   We KEEP this visible because the Version Dropdown might live here or nearby.
-   We place it at order 25 (Right side).
+   Kept transparently for structure.
 */
 .md-header__title {
   display: flex !important;
@@ -20,19 +19,14 @@
   padding: 0;
   width: auto;
   order: 25;
-  /* Debugging: See if this container takes space */
-  /* border: 1px dashed yellow; */
 }
 
-/* 
-   Hide ONLY the text spans of the title.
-   Do NOT use display:none on the parent topic, just the text.
-*/
+/* Hide ONLY the text spans of the title. */
 .md-header__topic .md-ellipsis {
   display: none !important;
 }
 
-/* Ensure the topic container itself is visible (in case it wraps version) */
+/* Ensure the topic container itself is visible */
 .md-header__topic {
   display: flex !important;
   align-items: center;
@@ -65,8 +59,7 @@
 /* Version Dropdown */
 .md-version {
   order: 25;
-  /* Same group as title */
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   margin-right: 0.5rem;
   display: flex !important;
   align-items: center;
@@ -77,10 +70,20 @@
   opacity: 1 !important;
   color: inherit !important;
   z-index: 100;
+}
 
-  /* Debugging: Red border to spot it */
-  border: 2px solid red;
-  min-width: 50px;
+/* Add "Version " Prefix */
+.md-version__button::before {
+  content: "Version ";
+  margin-right: 0.3em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+/* Make the version text cleaner */
+.md-version__button {
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 /* Theme Toggle */

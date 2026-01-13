@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/moil/1.0/</loc>
+         <loc>https://example.com/moil/2.0/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/definition/fisheye-tech/</loc>
+         <loc>https://example.com/moil/2.0/definition/fisheye-tech/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/definition/key-features/</loc>
+         <loc>https://example.com/moil/2.0/definition/key-features/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/definition/what-is-moil/</loc>
+         <loc>https://example.com/moil/2.0/definition/what-is-moil/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/install/dev-guide/</loc>
+         <loc>https://example.com/moil/2.0/install/dev-guide/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/install/requirements/</loc>
+         <loc>https://example.com/moil/2.0/install/requirements/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/install/user-guide/</loc>
+         <loc>https://example.com/moil/2.0/install/user-guide/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/ai-tracking/</loc>
+         <loc>https://example.com/moil/2.0/modes/ai-tracking/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/discussion/</loc>
+         <loc>https://example.com/moil/2.0/modes/discussion/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/global/</loc>
+         <loc>https://example.com/moil/2.0/modes/global/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/original/</loc>
+         <loc>https://example.com/moil/2.0/modes/original/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/patrol/</loc>
+         <loc>https://example.com/moil/2.0/modes/patrol/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/modes/presentation/</loc>
+         <loc>https://example.com/moil/2.0/modes/presentation/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/release-notes/bug-fixes/</loc>
+         <loc>https://example.com/moil/2.0/release-notes/bug-fixes/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/release-notes/highlights/</loc>
+         <loc>https://example.com/moil/2.0/release-notes/highlights/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/release-notes/improvements/</loc>
+         <loc>https://example.com/moil/2.0/release-notes/improvements/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/release-notes/new-features/</loc>
+         <loc>https://example.com/moil/2.0/release-notes/new-features/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/release-notes/overview/</loc>
+         <loc>https://example.com/moil/2.0/release-notes/overview/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/usage/camera-control/</loc>
+         <loc>https://example.com/moil/2.0/usage/camera-control/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/usage/operations/</loc>
+         <loc>https://example.com/moil/2.0/usage/operations/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/usage/quick-start/</loc>
+         <loc>https://example.com/moil/2.0/usage/quick-start/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-         <loc>https://example.com/moil/1.0/usage/recording/</loc>
+         <loc>https://example.com/moil/2.0/usage/recording/</loc>
          <lastmod>2026-01-13</lastmod>
     </url>
 </urlset>
