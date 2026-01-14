@@ -1,5 +1,5 @@
 site_name: Moil Meeting Docs
-site_url: https://example.com/moil
+site_url: https://belajarsiko-bit.github.io/moil-meeting-docs/latest/
 repo_url: https://github.com/perseverance-tech-tw/video-conference-using-fisheye
 repo_name: Moil Meeting
 
@@ -14,7 +14,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-    # Mode Terang
     - scheme: default
       primary: blue
       accent: purple
