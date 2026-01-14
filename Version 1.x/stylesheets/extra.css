@@ -159,10 +159,14 @@
 }
 
 [data-md-color-scheme="default"] .md-search__input::placeholder {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* 3. GLOBAL ADJUSTMENTS */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --md-header-height: 4rem;
 }
@@ -619,3 +623,35 @@
     padding-top: 0;
   }
 }
+
+/* Invert colors for specific elements in light mode */
+[data-md-color-scheme="default"] .light-mode-invert {
+  filter: invert(1);
+}
+
+/* ============================================
+   6. SCROLL ANIMATIONS
+   ============================================ */
+
+/* Initial state for upgrade - elements are hidden */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset table,
+.md-typeset .admonition,
+.md-typeset img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state */
+.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Stagger animations slightly if needed, or keep generic */
