@@ -1,117 +1,83 @@
 # Release Notes
 
-**Moil Meeting Desktop Application v2.0**
+## Moil Meeting Desktop Application v2.0
+
+**Release Date:** August 19, 2025
+
+We are pleased to announce the official launch of **Moil Meeting Desktop Application v2.0**. This major release introduces a comprehensive suite of core features designed to streamline online meetings and team collaboration within a modern, high-performance interface.
 
 ---
 
-## Overview
+### Overview
 
-We are excited to announce the official launch of **Moil Meeting Desktop Application v2.0**. This release brings a powerful set of core features designed to make online meetings, team communication, and collaboration easier than ever — all within a modern, lightweight interface.
+Moil Meeting v2.0 represents a significant milestone in our commitment to providing a seamless communication experience. This version focuses on stability, usability, and cross-platform compatibility, ensuring that your meetings are productive regardless of your device or connection quality.
 
----
+### Highlights
 
-## Highlights
-
-**All-in-one meeting platform** — Video calls, chat, and file sharing in a single application.
-
-**User-friendly design** — A clean, intuitive interface with simple navigation.
-
-**Cross-platform support** — Available on Windows, Linux, and macOS.
-
-**Optimized performance** — Lightweight, fast, and stable even on limited connections.
+-   **Unified Communication:** Integrated video conferencing and recording seamlessly in one app.
+-   **Modern Interface:** A redesigned, intuitive UI that simplifies navigation.
+-   **Cross-Platform:** Native support for Windows, Linux, and macOS.
+-   **Performance:** Optimized for speed and stability, even in low-bandwidth environments.
 
 ---
 
-## New Features
+### What's New
 
-### What's New in 2.0
+#### Core Features
 
-**Video List**  
-Browse and manage the list of available videos in one organized view.
+-   **Video List Management:** Efficiently browse and manage potentially unlimited video sources.
+-   **Right-Click Enhancements:** New context menu options for rapid access to "Show Original Window" and other view controls.
+-   **Token Security:** Secured access to open-source content via token authentication.
+-   **Camera Orientation:** Three new modes (Upside, Front, Downside) to match physical mounting.
+-   **UI Scaling:** Adjust the interface size to comfortably fit any screen resolution.
+-   **Integrated Player:** Playback videos directly within the application without external tools.
 
-**Right-Click Menu → Show Original Window**  
-Right-click on a video to open the original source window.
+### Improvements
 
-**Dialog Open Source with Token**  
-Access open source content through a dedicated dialog with token-based authentication.
+-   **Responsive Layout:** Rendering engine optimized for diverse screen sizes.
+-   **Visual Consistency:** Standardized iconography and typography.
+-   **Accessibility:** Improved color contrast for better readability in all lighting conditions.
 
-**Camera Orientation Modes**  
-Three camera orientation modes: Upside, Front, and Downside for flexible viewing.
+### Bug Fixes
 
-**UI Scaling**  
-Adjust the user interface scale for better visual comfort across different screen sizes.
-
-**Video Playback**  
-Play videos directly within the application without the need for external tools.
-
----
-
-## Improvements
-
-**Adjust Page Size Clearly**  
-Optimized page layout for better readability across various screen resolutions.
-
-**Consistent UI**  
-Unified design with clearer icons, colors, and navigation.
-
-**Improved Color Contrast**  
-Updated color scheme and contrast for improved accessibility and readability, especially in light and dark modes.
+-   Resolved synchronization issues with the **Cache Feature**.
+-   Improved the detection accuracy and stability of **AI Tracking**.
+-   Corrected metadata rendering issues in the **Camera Information** panel.
 
 ---
 
-## Bug Fixes
+### Upgrade Instructions
 
-The following issues have been resolved in this release:
+**No special actions are required.** Existing users can upgrade directly to v2.0. All user configurations and data will be preserved automatically.
 
-1. Cache Feature
-2. AI Tracking
-3. Camera Information
+### Getting Started
 
----
+1.  **Download:** Get the installer for your OS from the [Download Center](../install/index.md).
+2.  **Launch:** Open the application and configure your camera.
+3.  **Explore:** Use **Help → What's New** to tour the latest features.
 
-## Upgrade Notes
-
-No special upgrade procedures are required for this release. Users can install v2.0 directly or upgrade from previous versions without additional configuration.
-
----
-
-## Getting Started
-
-Follow these steps to begin using Moil Meeting v2.0:
-
-1. Download and install **Moil Meeting v2.0** for your operating system
-2. Log in with your Moil account
-3. Explore the new features through **Help → What's New**
-
-!!! note
-    Need help or found a bug? Go to **Help → Report an Issue** or contact the Moil support team.
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Note:</strong><br>
+  Need assistance or found a bug? Navigate to <strong>Help → Report an Issue</strong> or contact the Moil support team.
+</div>
 
 ---
 
-## Changelog
+### Changelog
 
-### Version 2.0 (2025-08-19)
+**v2.0 (2025-08-19)**
 
-Initial GA release with core meeting features, screen sharing, recording, chat, and performance optimizations.
-
-**Added:**
-- Video List management interface
-- Right-click context menu with original window display
-- Token-based authentication for open source dialog
-- Three camera orientation modes (Upside, Front, Downside)
-- UI scaling functionality
-- Integrated video playback capability
-
-**Improved:**
-- Page layout optimization for multiple screen resolutions
-- Unified UI design with enhanced visual consistency
-- Color contrast for better accessibility
-
-**Fixed:**
-- Cache feature functionality
-- AI tracking performance
-- Camera information display
+| Type | Description |
+| :--- | :--- |
+| **New** | Video List management interface. |
+| **New** | Right-click context menu options. |
+| **New** | Token-based authentication. |
+| **New** | Camera orientation controls (Upside, Front, Downside). |
+| **New** | UI Scaling capabilities. |
+| **Improved** | Responsive layout and visual consistency. |
+| **Fixed** | Cache synchronization reliability. |
+| **Fixed** | AI Tracking stability. |
 
 ---
 
-*For detailed information about specific features, please refer to the respective sections in the documentation.*
+*For detailed guidance on using these features, please refer to the [Usage Guide](../usage/index.md).*

@@ -1,181 +1,160 @@
-# Moil Meeting Installation Guide
+# Installation Guide
 
-This guide provides comprehensive instructions for installing Moil Meeting on your system.
+This guide provides step-by-step instructions to install and run the **Moil Meeting** application on your system.
 
 ---
 
 ## Operating System Requirements
 
-Before installing Moil Meeting, ensure your system meets the following requirements.
+### Windows
 
-### Supported Operating Systems
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Prerequisites for Windows:</strong><br>
+  1. Download and install <a href="https://obsproject.com/download">OBS Studio</a>.<br>
+  2. Open OBS and click <strong>Start Virtual Camera</strong> before launching Moil Meeting.
+</div>
 
-| Operating System | Version | Architecture |
-|------------------|---------|--------------|
-| Windows | 10, 11 | 64-bit |
-| Linux | Ubuntu 20.04+, Debian 11+ | 64-bit |
-| macOS | 11 (Big Sur) or later | Intel / Apple Silicon |
+![Start Camera in OBS](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start_camera.png)
+*Start Virtual Camera in OBS Studio*
 
-### Hardware Requirements
+### Linux
 
-**Minimum Requirements:**
-
-- **CPU**: Intel Core i5 or AMD Ryzen 5 (or equivalent)
-- **RAM**: 8 GB
-- **Storage**: 500 MB free space
-- **GPU**: Integrated graphics with OpenGL 3.3 support
-- **USB**: USB 2.0 port for camera connection
-
-**Recommended Requirements:**
-
-- **CPU**: Intel Core i7 or AMD Ryzen 7 (or equivalent)
-- **RAM**: 16 GB
-- **Storage**: 1 GB free space
-- **GPU**: Dedicated GPU with OpenGL 4.5 support
-- **USB**: USB 3.0 port for optimal camera performance
-
-### Camera Requirements
-
-- Compatible fisheye camera
-- Proper camera drivers installed
-- USB connection (USB 3.0 recommended for best performance)
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Prerequisites for Linux:</strong><br>
+  1. Disable <strong>Secure Boot</strong> in BIOS settings.<br>
+  2. Install the <code>v4l2loopback</code> kernel module:
+  <pre>sudo apt install v4l2loopback-dkms</pre>
+</div>
 
 ---
 
 ## User Installation Guide
 
-Follow these steps to install Moil Meeting on your system.
+### Download Moil Meeting
+
+1.  Visit the [Video Conference GitHub Repository (Releases)](https://github.com/perseverance-tech-tw/video-conference-using-fisheye/releases/tag/v1.1.42).
+2.  Download the appropriate installer:
+    *   **Windows**: `FisheyeVideoConferenceSystem-v1.1.6.exe`
+    *   **Linux**: `FisheyeVideoConferenceSystem-v1.1.6-linux.7z`
+
+![Video Conference Repository](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/video_conference_repository.png)
+*Repository Release Page*
 
 ### Windows Installation
 
-1. **Download the Installer**
-   - Download the latest Moil Meeting installer (.exe) from the official website
+**Step 1: Run Installer**
+Right-click the installer file and select **Run as Administrator** to ensure proper permissions.
 
-2. **Run the Installer**
-   - Double-click the downloaded file
-   - Accept the license agreement
-   - Choose installation location
-   - Click "Install"
+![Run as Administrator](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/run_administrator.png)
 
-3. **Complete Setup**
-   - Wait for installation to complete
-   - Optionally create desktop shortcut
-   - Click "Finish"
+**Step 2: Follow Wizard**
+Proceed through the installation wizard, selecting your preferred destination folder.
 
-4. **Launch Application**
-   - Open Moil Meeting from Start Menu or desktop shortcut
+**Step 3: Access Application**
+After installation, locate the application in your selected folder.
+*   `FisheyeVideoConference.exe` — Launch the application.
+*   `unins000` — Uninstall the application.
+
+![Application Files](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/run_app.png)
+
+**Step 4: Launch**
+You are now ready to use the Moil Meeting system.
+
+![Moil Meeting Application](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/moil_app.png)
+*Moil Meeting Application Interface*
 
 ### Linux Installation
 
-**Using APT (Debian/Ubuntu):**
+**Step 1: Extract Archive**
+Unzip the downloaded `.7z` archive file.
+
+**Step 2: Run Installation Script**
+Navigate to the extracted folder and execute the install script:
 
 ```bash
-# Add repository
-sudo add-apt-repository ppa:moil/meeting
-
-# Update package list
-sudo apt update
-
-# Install Moil Meeting
-sudo apt install moil-meeting
+./install.sh   # Install application
 ```
 
-**Using AppImage:**
-
+To remove the application later, use:
 ```bash
-# Download AppImage
-wget https://releases.moil.io/meeting/latest/MoilMeeting.AppImage
-
-# Make executable
-chmod +x MoilMeeting.AppImage
-
-# Run application
-./MoilMeeting.AppImage
+./uninstall.sh # Uninstall application
 ```
 
-### macOS Installation
+**Step 3: Launch**
+Once installed, the application shortcut will appear on your desktop.
 
-1. **Download DMG File**
-   - Download the latest Moil Meeting .dmg from the official website
-
-2. **Mount and Install**
-   - Double-click the DMG file
-   - Drag Moil Meeting to Applications folder
-
-3. **First Launch**
-   - Open from Applications folder
-   - Allow security permissions if prompted
-   - Grant camera access when requested
+![Linux Moil Meeting Application](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/linux_app.png)
+*Moil Meeting on Linux Desktop*
 
 ---
 
 ## Developer Installation Guide
 
-This guide is for developers who want to build Moil Meeting from source or contribute to development.
+This section is for developers who want to run Moil Meeting from source code.
 
 ### Prerequisites
 
-- Python 3.9 or higher
-- Git
-- pip package manager
-- Virtual environment (recommended)
+| Component | Requirement |
+| :--- | :--- |
+| **OS** | Ubuntu or Windows |
+| **Python** | Version 3.7 or higher |
+| **Tools** | Git installed |
 
-### Clone Repository
+### Setup Steps
 
-```bash
-git clone https://github.com/perseverance-tech-tw/video-conference-using-fisheye.git
-cd video-conference-using-fisheye
-```
+1.  **Clone Repository:**
+    ```bash
+    git clone https://github.com/username/video-conference-using-fisheye.git
+    cd video-conference-using-fisheye
+    ```
 
-### Setup Virtual Environment
+2.  **Set Up Virtual Environment:**
 
-```bash
-# Create virtual environment
-python -m venv venv
+    *   **Windows:**
+        ```bash
+        python -m venv venv
+        venv\Scripts\activate
+        ```
+    *   **Linux/macOS:**
+        ```bash
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
 
-# Activate virtual environment
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
-```
+3.  **Install Dependencies:**
+    First, install core packages:
+    ```bash
+    pip install opencv-python pyvirtualcam ultralytics pygrabber mediapipe
+    ```
+    Then, install all requirements:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Application
-
-```bash
-python main.py
-```
-
-### Development Tools
-
-**Linting:**
-```bash
-pip install flake8
-flake8 src/
-```
-
-**Testing:**
-```bash
-pip install pytest
-pytest tests/
-```
-
-### Building from Source
-
-**Create Executable:**
-```bash
-pip install pyinstaller
-pyinstaller --name MoilMeeting --windowed main.py
-```
-
-The built application will be in the `dist/` directory.
+4.  **Run Application:**
+    Navigate to `src` and execute:
+    ```bash
+    python main.py
+    ```
 
 ---
 
-*For usage instructions after installation, refer to the [Usage](../usage/index.md) guide.*
+## Post-Installation
+
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Success!</strong><br>
+  Installation is complete. Please proceed to the <a href="../usage/index.md">Usage Guide</a> to learn how to operate Moil Meeting.
+</div>
+
+## Troubleshooting
+
+| Issue Type | Solution |
+| :--- | :--- |
+| **Windows Camera** | Ensure OBS Virtual Camera is active *before* launching the app. Run as Administrator if issues persist. |
+| **Linux Boot** | Verify that **Secure Boot** is disabled in your BIOS settings. |
+| **Linux Modules** | Check if the loopback module is loaded: `lsmod | grep v4l2loopback`. |
+| **Developer Env** | Ensure your virtual environment is activated and Python version is >= 3.7. |
+
+---
+
+*For additional support, refer to the [Operations Guide](../operations/index.md) or contact the Moil Meeting support team.*

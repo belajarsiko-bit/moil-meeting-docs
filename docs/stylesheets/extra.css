@@ -619,3 +619,7 @@
     padding-top: 0;
   }
 }
+/* Invert colors for specific elements in light mode */
+[data-md-color-scheme="default"] .light-mode-invert {
+  filter: invert(1);
+}

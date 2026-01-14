@@ -1,511 +1,286 @@
-# Operations of the Moil Meeting
+## Application Overview
 
-This section provides comprehensive guidance on how to operate all features of Moil Meeting.
+**Fisheye Video Conference System** is a video conferencing application designed with a streamlined and modern interface. Upon launch, users are immediately presented with the main dashboard for rapid access to core functionalities.
 
----
+### Operational Modes
 
-## Overview of Apps
+The application features several distinct operational modes, accessible via the bottom navigation bar:
 
-This section provides an overview of the Moil Meeting application interface and its main components.
+- **Start Camera** — Activates video capture for all modes.
+- **Original Mode** — Displays the raw, uncorrected fisheye view.
+- **Discussion Mode** — Facilitates interactive, multi-participant discussions.
+- **Global Mode** — Connects participants globally with panoramic views.
+- **Patrol Mode** — Automated surveillance scanning.
+- **Presentation Mode** — Optimized for content delivery and focus.
 
-### Application Interface
-
-The Moil Meeting application consists of several key areas:
-
-#### Main Window
-
-The main window displays the video feed from your fisheye camera with various viewing modes available.
-
-#### Control Panel
-
-Located on the side of the application, the control panel provides access to:
-
-- Camera controls
-- Mode selection
-- Recording options
-- Configuration settings
-
-#### Status Bar
-
-The status bar shows:
-
-- Camera connection status
-- Recording status
-- Current mode
-- Frame rate information
-
-### Application Modes
-
-Moil Meeting supports multiple viewing modes:
-
-| Mode | Description |
-|------|-------------|
-| Original | Raw fisheye image view |
-| Discussion | Optimized for group discussions |
-| Global | Wide-angle room view |
-| Patrol | Automated room scanning |
-| Presentation | Focus on presenter |
+![Application Overview](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/overview.png)
+*Main Interface with Mode Selection*
 
 ---
 
-## Quick Start
+## Quick Start Guide
 
-Get started with Moil Meeting in just a few simple steps.
+Welcome to **Moil Meeting**, a comprehensive solution for 360° video conferencing and surveillance. Whether hosting a remote meeting, monitoring a wide area, or delivering a presentation, this platform provides the flexibility you need.
 
-### Prerequisites
+### Initial Setup
 
-Before you begin, ensure you have:
+Launch the application to access the main interface.
 
-- Moil Meeting installed on your system
-- A compatible fisheye camera connected
-- Proper camera drivers installed
+![Start Screen](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start.png)
 
-### Step 1: Launch the Application
+### Media Source Selection
 
-Start Moil Meeting from your applications menu or by running the executable.
+Click the **START CAMERA** button to initiate the video feed. You will be prompted to select a source:
 
-### Step 2: Connect Your Camera
+- **Open Camera** — Use a connected USB or built-in camera.
+- **Load Media** — Play a pre-recorded video file.
+- **Camera URL** — Connect to an IP camera stream.
 
-1. Ensure your fisheye camera is connected via USB
-2. Wait for the system to recognize the device
-3. The camera should appear in the device list
+![Original Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/original_mode_view.png)
+*Original Mode Active*
 
-### Step 3: Start the Camera
+Each source allows for detailed configuration, including resolution and frame rate adjustments.
 
-1. Click the **Start Camera** button
-2. Wait for the camera feed to appear
-3. Verify the video is displaying correctly
+### Switching Modes
 
-### Step 4: Select a Mode
+Methods of operation can be switched dynamically. The application defaults to **Original Mode** upon initialization.
 
-Choose from the available modes:
+![Discussion Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/disscusion_mode_view.png)
+*Discussion Mode*
 
-- **Original Mode** — View the raw fisheye image
-- **Discussion Mode** — For group meetings
-- **Global Mode** — Wide-angle view
-- **Patrol Mode** — Automated scanning
-- **Presentation Mode** — Presenter focus
+![Patrol Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/patrol_mode_view.png)
+*Patrol Mode*
 
-### Step 5: Start Recording (Optional)
-
-If you want to record the meeting:
-
-1. Click the **Start Recording** button
-2. The recording indicator will appear
-3. Click **Stop Recording** when finished
+![Presentation Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/presentation_mode_view.png)
+*Presentation Mode*
 
 ---
 
-## Start Camera and Stop Camera
-
-This guide covers how to start and stop the camera in Moil Meeting.
+## Camera Operations
 
 ### Starting the Camera
 
-#### Prerequisites
+![Media Source Selection](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/select_media_source_v2.png)
+*Source Selection Dialog*
 
-- Ensure your fisheye camera is properly connected
-- Verify the camera is recognized by your system
+**Procedure:**
 
-#### Steps to Start Camera
+1. Click **START CAMERA** at the bottom of the interface.
+2. Choose your input source in the dialog:
+   - **Open Camera**: For physical devices.
+   - **Load Media**: For file playback.
+   - **Camera URL**: For network streams.
+   - **Token**: For authenticated streams.
+3. Click **OK** to proceed.
 
-1. **Open Moil Meeting** — Launch the application
-2. **Select Camera Source** — Choose your camera from the dropdown menu
-3. **Click Start Camera** — Press the "Start Camera" button
-4. **Wait for Initialization** — The camera feed should appear within a few seconds
+### Camera Controls
 
-#### Start Camera Button
+![Camera Controls](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/stop_play.png)
+*Playback Controls*
 
-The Start Camera button is located in the control panel. When clicked:
+Once active, use the control bar to manage the feed:
 
-- The button label changes to "Stop Camera"
-- The camera feed begins streaming
-- The status bar shows "Camera Active"
-
-### Stopping the Camera
-
-#### Steps to Stop Camera
-
-1. **Click Stop Camera** — Press the "Stop Camera" button
-2. **Confirm Stop** — The camera feed will stop immediately
-3. **Status Update** — The status bar shows "Camera Inactive"
-
-#### When to Stop the Camera
-
-- When ending a meeting
-- When switching cameras
-- When troubleshooting camera issues
-
-### Troubleshooting
-
-**Camera Not Starting:**
-- Check USB connection
-- Verify camera drivers are installed
-- Restart the application
-- Try a different USB port
-
-**Camera Feed Is Black:**
-- Ensure the camera lens cap is removed
-- Check lighting conditions
-- Verify camera settings in configuration panel
+- **Stop Camera**: Completely stops the video feed.
+- **Pause Camera**: Freezes the current frame.
+- **Play Camera**: Resumes the feed from a paused state.
 
 ---
 
-## Start Recording and Stop Recording
+## Recording Functions
 
-This guide covers how to record meetings using Moil Meeting.
+### Start Recording
 
-### Starting a Recording
+1. Click the **Start Recording** button.
+2. A confirmation message, "Recording Started," will appear.
 
-#### Prerequisites
+![Recording Active](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/recording.png)
+*Recording Active*
 
-- Camera must be active before recording
-- Sufficient disk space for the recording
-- Proper write permissions for the output directory
+### Stop Recording
 
-#### Steps to Start Recording
+1. Click **Stop Recording**.
+2. A "Recording Finished" confirmation will display the saved file path.
 
-1. **Ensure Camera is Running** — The camera must be started first
-2. **Click Start Recording** — Press the "Start Recording" button
-3. **Recording Indicator** — A red recording indicator will appear
-4. **Monitor Status** — The status bar shows recording time
-
-#### Recording Settings
-
-Before starting a recording, you may want to configure:
-
-- Output directory
-- Video format
-- Quality settings
-- Audio options
-
-### Stopping a Recording
-
-#### Steps to Stop Recording
-
-1. **Click Stop Recording** — Press the "Stop Recording" button
-2. **Wait for Processing** — The video file will be finalized
-3. **File Saved** — A confirmation message shows the save location
-
-#### After Recording
-
-- The recording is saved to your configured output directory
-- Default format is typically MP4 or AVI
-- Check the file to ensure recording was successful
-
-### Recording Tips
-
-1. **Test Before Important Meetings** — Always do a test recording first
-2. **Check Disk Space** — Ensure sufficient storage before long recordings
-3. **Monitor Performance** — Recording may impact system performance
-4. **Use Quality Settings** — Adjust quality based on your needs
+![Recording Complete](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/stop_record.png)
+*Recording Saved*
 
 ---
 
-## Original Mode
+## Detailed Mode Operations
 
-Original Mode displays the raw fisheye camera image without any transformation or processing.
+### Original Mode
 
-### Overview
+Displays the full **360-degree fisheye view**. This mode shows the complete, distorted image as captured by the sensor.
 
-Original Mode is the default viewing mode that shows the unprocessed output from your fisheye camera. This mode is useful for:
+![Original Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/original.png)
+*360° Fisheye View*
 
-- Viewing the complete camera coverage
-- Calibrating camera settings
-- Troubleshooting image issues
+**Key Benefits:**
 
-### How to Use
+- **Total Coverage:** Eliminates blind spots by capturing the entire room.
+- **Situational Awareness:** Provides full context for surveillance or large meetings.
+- **Simplicity:** No need for manual pan/tilt adjustments.
 
-1. Start the camera
-2. Select **Original Mode** from the mode selector
-3. The full fisheye image will be displayed
+### Discussion Mode
 
-### Features
+Designed for multi-participant meetings, this mode creates virtual "cameras" from the single fisheye source.
 
-- **Full Resolution** — View the image at native camera resolution
-- **No Processing** — Raw image without dewarp processing
-- **Complete Coverage** — See the entire fisheye field of view
+![Discussion Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/disscusion_newversion.png)
+*Discussion Mode Interface*
 
-### When to Use Original Mode
+#### Configuration
 
-| Scenario | Recommended |
-|----------|-------------|
-| Camera calibration | ✓ |
-| Testing camera connection | ✓ |
-| Viewing complete coverage | ✓ |
-| Active meetings | ✗ (use other modes) |
+Access settings via the **Config Button**:
 
-### Settings
+![Config Button](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/config_v2.png)
 
-Original Mode has minimal settings as it displays the raw image. Key settings include:
+**Features:**
+- **Limit Person**: Choose between 2, 3, 4, 6, or 8 participant views.
+- **View List**: Manage individual views (Pause, Reorder, Configure).
+- **Layout Slider**: Dynamically resize video windows.
+- **Panorama**: Toggle the panoramic strip at the top.
 
-- Brightness adjustment
-- Contrast adjustment
-- Exposure settings
+![Limit Person](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/limit_person.png)
+*Participant Limit Selection*
 
----
+**Panorama Toggle:**
+- **Show Panorama**: Enables a wide strip showing the entire room context.
+- **Hide Panorama**: Focuses solely on individual participants.
 
-## Discussion Mode
+![Right-Click Menu](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/right_clicked_v2.png)
+*Right-click Context Menu*
 
-Discussion Mode is optimized for group discussions and meetings, providing multiple views of participants.
+### Global Mode
 
-### Overview
+Displays a dual-panoramic strip, effectively "unwrapping" the 360° image into a flat view.
 
-Discussion Mode automatically creates multiple dewarped views to capture all participants in a meeting scenario. This mode is ideal for:
+![Global Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/global_mode.png)
+*Global Panoramic View*
 
-- Group meetings with multiple participants
-- Round table discussions
-- Collaborative sessions
+**Features:**
+- **Dual Views**: View two different panoramic angles simultaneously.
+- **Flip Controls**: Orientation adjustment.
 
-### How to Use
+### Patrol Mode
 
-1. Start the camera and ensure all participants are visible
-2. Select **Discussion Mode** from the mode selector
-3. Multiple participant views will be displayed
+Automates monitoring by panning the virtual view across the panoramic scene.
 
-### Features
+![Patrol Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/patrol_mode_v2.png)
+*Patrol Mode*
 
-- **Multi-view Display** — Shows multiple dewarped views simultaneously
-- **Automatic Layout** — Views are arranged for optimal visibility
-- **Participant Focus** — Each view focuses on different areas
+**Features:**
+- **Instant Activation**: Begins scanning immediately upon selection.
+- **Dynamic Control**: Use the slider to manually override or adjust the view.
 
-### Configuration Options
+### Presentation Mode
 
-| Setting | Description |
-|---------|-------------|
-| Number of Views | Adjust how many views are displayed |
-| View Layout | Choose grid or other layouts |
-| View Size | Adjust individual view sizes |
+Focuses on a specific area of interest, such as a whiteboard or speaker, while minimizing distortion.
 
-### Best Practices
+![Presentation Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/presentation_mode_v2.png)
+*Presentation Focus*
 
-1. **Camera Position** — Center the camera for equal coverage
-2. **Participant Arrangement** — Arrange participants evenly around the camera
-3. **Lighting** — Ensure even lighting for all participants
-
----
-
-## Global Mode
-
-Global Mode provides a dewarped wide-angle view of the entire room.
-
-### Overview
-
-Global Mode transforms the fisheye image into a wide panoramic view that shows the entire room in a natural perspective. This mode is useful for:
-
-- Viewing the complete meeting room
-- Getting spatial awareness of participants
-- Overview monitoring
-
-### How to Use
-
-1. Start the camera
-2. Select **Global Mode** from the mode selector
-3. A dewarped panoramic view will be displayed
-
-### Features
-
-- **Panoramic View** — Wide-angle dewarped perspective
-- **Complete Coverage** — See the entire room at once
-- **Natural Perspective** — Corrected distortion for natural viewing
-
-### Settings
-
-| Setting | Description |
-|---------|-------------|
-| Field of View | Adjust the viewing angle |
-| Pan | Horizontal rotation adjustment |
-| Tilt | Vertical angle adjustment |
-
-### Use Cases
-
-1. **Room Overview** — Get a complete picture of the meeting space
-2. **Security Monitoring** — Monitor entire areas
-3. **Event Coverage** — Capture wide events
-
----
-
-## Patrol Mode
-
-Patrol Mode automatically scans around the room.
-
-### Overview
-
-Patrol Mode automatically rotates the dewarped view around the room, ensuring all areas are periodically visible. This mode is ideal for:
-
-- Automated room monitoring
-- Capturing all participants over time
-- Hands-free operation
-
-### How to Use
-
-1. Start the camera
-2. Select **Patrol Mode** from the mode selector
-3. The view will automatically begin scanning
-
-### Features
-
-- **Automatic Scanning** — View rotates automatically
-- **Configurable Speed** — Adjust scanning speed
-- **Configurable Range** — Set patrol limits
-- **Pause/Resume** — Manually control patrol
-
-### Settings
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| Patrol Speed | How fast the view rotates | Medium |
-| Patrol Range | Degrees to cover | 360° |
-| Pause Duration | Time to pause at each position | 2 seconds |
-
-### Configuration
-
-**Adjusting Speed:**
-1. Open Configuration Panel
-2. Navigate to Patrol Settings
-3. Adjust the speed slider
-
-**Setting Range:**
-1. Define start and end angles
-2. Set number of stops
-3. Configure pause duration
-
----
-
-## Presentation Mode
-
-Presentation Mode is designed for presentations, focusing on the presenter.
-
-### Overview
-
-Presentation Mode provides an optimized view for presentation scenarios, typically focusing on:
-
-- The presenter's position
-- Presentation screen/materials
-- Both presenter and materials in split view
-
-### How to Use
-
-1. Start the camera
-2. Position the presenter in the designated area
-3. Select **Presentation Mode** from the mode selector
-4. The view will focus on the presenter area
-
-### Features
-
-- **Presenter Focus** — Automatic focus on presenter area
-- **Split View Option** — Show presenter and slides together
-- **Zoom Control** — Adjust zoom level on presenter
-- **Area Selection** — Define presenter location
-
-### Settings
-
-| Setting | Description |
-|---------|-------------|
-| Presenter Area | Define where the presenter stands |
-| Zoom Level | Adjust magnification |
-| Split View | Enable presenter + slides view |
-| Auto-tracking | Follow presenter movement |
-
-### Configuration
-
-**Setting Up Presenter Area:**
-1. Open Configuration Panel
-2. Navigate to Presentation Settings
-3. Click "Define Presenter Area"
-4. Mark the area where the presenter will stand
-
-**Enabling Split View:**
-1. Toggle "Split View" option
-2. Define the presentation screen area
-3. Adjust the view proportions
+**Usage:**
+1. Select **Presentation Mode**.
+2. Use **Dialog Transformation** (Right-click) to fine-tune the region of interest.
 
 ---
 
 ## Configuration Panel
 
-The Configuration Panel provides access to all settings and customization options in Moil Meeting.
+Access system-wide settings via the **Config Button**.
 
-### Accessing the Configuration Panel
+### Camera Information
 
-Click the **Settings** or **Configuration** button in the control panel to open the Configuration Panel.
+Displays technical details about the current video source.
 
-### Sections
+![Camera Information](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/camera_information_v2.png)
 
-#### Camera Settings
+- **Model & Version**: Hardware and software identifiers.
+- **Video Stats**: Resolution and Field of View (FOV).
+- **Update Check**: Provides a download link if a new version is detected.
 
-Configure camera-related options:
+### View Labels
 
-| Setting | Description |
-|---------|-------------|
-| Camera Source | Select which camera to use |
-| Resolution | Set video resolution |
-| Frame Rate | Adjust frames per second |
-| Brightness | Adjust image brightness |
-| Contrast | Adjust image contrast |
-| Exposure | Configure exposure settings |
+Toggle overlay labels for camera views.
 
-#### Mode Settings
+![Show View Number](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/view_number_v2.png)
+*Labels Visible*
 
-Configure settings for each viewing mode:
+![Hide View Number](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/hide_view_number_v2.png)
+*Labels Hidden*
 
-- **Original Mode** — Basic image adjustments
-- **Discussion Mode** — Number of views, layout options
-- **Global Mode** — Field of view, pan/tilt settings
-- **Patrol Mode** — Speed, range, pause duration
-- **Presentation Mode** — Presenter area, zoom level
+**Reset Labels:** Restores default naming and positioning.
 
-#### Recording Settings
+### Advanced Controls
 
-Configure recording options:
+- **Flip Camera**: Correct orientation (Upside, Front, Downside).
+- **Panorama Config**: Fine-tune the alpha/beta angles and cropping of the panoramic view.
+- **Resolution**: Adjust output quality per view.
+- **UI Scale**: Increase or decrease interface size for readability.
+- **Cache**: Import/Export/Reset configuration cache.
 
-| Setting | Description |
-|---------|-------------|
-| Output Directory | Where recordings are saved |
-| Video Format | MP4, AVI, etc. |
-| Quality | Low, Medium, High |
-| Audio | Enable/disable audio recording |
-
-#### Display Settings
-
-Adjust display options:
-
-- Window layout
-- Color scheme
-- Status bar visibility
-- Full screen options
-
-#### Advanced Settings
-
-Expert configuration options:
-
-- Camera parameters
-- Processing options
-- Performance tuning
-- Debug options
-
-### Saving Settings
-
-- Click **Apply** to apply changes without closing
-- Click **Save** to save and close the panel
-- Click **Cancel** to discard changes
-
-### Resetting Settings
-
-To restore default settings:
-
-1. Open Configuration Panel
-2. Click **Reset to Defaults**
-3. Confirm the reset action
-
-### Exporting/Importing Settings
-
-You can export your settings for backup or transfer:
-
-1. Click **Export Settings**
-2. Choose a save location
-3. To import, click **Import Settings** and select the file
+![Resolution Settings](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/resolution_v2.png)
 
 ---
 
-*For more information about specific modes, visit the [Modes](../modes/index.md) section.*
+## Advanced Interactions
+
+### Right-Click Context Menu
+
+Available in all modes for rapid access to view-specific tools.
+
+![Right-Click Menu](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/right_clicked_v2.png)
+
+- **View Information**: Detailed stats for the specific view.
+- **Save Image As**: Capture a snapshot.
+- **Show Original Image**: Quickly toggle to the raw fisheye feed.
+- **Pause View**: Freeze a specific quadrant.
+- **Configuration View Setting**: Deep-dive into Anypoint transformation parameters.
+
+### Anypoint Transformation
+
+Customize how a specific view is de-warped.
+
+![Configuration View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/configuration_v2.png)
+*Transformation Settings*
+
+**Parameters:**
+- **Alpha/Beta**: Adjust the viewing angle.
+- **Zoom**: Control magnification.
+- **Lock AI**: Prevent auto-tracking from moving this view.
+
+![Adjusted Transform](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/adjust_transform_v2.png)
+*Visual Adjustment Tool*
+
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Note: Mouse Press Event</strong><br>
+  Mouse interactions significantly enhance navigation control across all modes.
+</div>
+
+---
+
+## Mouse Controls
+
+### Drag to Move
+Click and drag within a view to shift the visible region.
+
+![Mouse Drag](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/mouse_drag.png)
+
+### Double-Click to Expand
+Double-click any view to maximize it to full screen.
+
+![Double-Click](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/double_clicked.png)
+
+### Scroll to Zoom
+Use the mouse wheel to zoom in and out.
+
+![Scroll Zoom](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/scroll_up_down.png)
+
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Tip:</strong><br>
+  Use <strong>Transformation</strong> and <strong>Adjusted Transform</strong> features to precisely focus on specific objects while referencing the original image for context.
+</div>
+
+---
+
+*For further assistance, please contact the Moil Meeting support team.*

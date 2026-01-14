@@ -1,26 +1,43 @@
-# Moil Meeting Of Usage
+# Usage Guide
 
-This section provides comprehensive guidance on how to use Moil Meeting effectively.
+![Moil Meeting Operations](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/operation.png)
+*Moil Meeting Application Interface*
 
-## Overview
+This section provides comprehensive guidance on using the **Moil Meeting** application, explaining components, features, and operational procedures to help users maximize the platform's capabilities.
 
-Moil Meeting is a powerful video conferencing application that leverages fisheye lens technology to provide immersive meeting experiences. This guide covers:
+---
 
-- Basic operations and controls
-- Camera management
-- Recording features
-- Mode configurations
+## Core Workflow
 
-## Quick Navigation
+To get the most out of Moil Meeting, we recommend the following operational flow:
 
-- [Operations of the Moil Meeting](../operations/index.md#operations-of-the-moil-meeting) - Learn how to operate the application
-- [Quick Start](../operations/index.md#quick-start) - Get started quickly
-- [Camera Controls](../operations/index.md#start-camera-and-stop-camera) - Manage camera operations
-- [Recording](../operations/index.md#start-recording-and-stop-recording) - Record your meetings
+### 1. Initialize
+*   **Start Camera:** Begin by selecting your video source (USB, IP, or File).
+*   **Original Mode:** Verify your camera angle and lighting in the default view.
 
-## Usage Tips
+### 2. Configure
+*   **Select Mode:** Choose the operational mode that fits your meeting type (e.g., *Discussion* for team meetings, *Presentation* for lectures).
+*   **Adjust Views:** Use the **Layout Slider** and right-click menus to arrange participant views.
 
-1. **Before Starting** - Ensure your fisheye camera is properly connected
-2. **Choose the Right Mode** - Select the mode that best fits your meeting scenario
-3. **Configure Settings** - Adjust settings in the configuration panel for optimal performance
-4. **Test Recording** - Test recording functionality before important meetings
+### 3. Operate
+*   **AI Tracking:** Enable for hands-free camera control.
+*   **Recording:** Capture important sessions directly to your local drive.
+
+---
+
+## Operations Breakdown
+
+For specific instructions, refer to the detailed sections below:
+
+| Section | Content |
+| :--- | :--- |
+| **[Camera Controls](../operations/index.md#camera-operations)** | Starting, stopping, and selecting media sources. |
+| **[Mode Selection](../modes/index.md)** | detailed breakdown of Original, Discussion, Global, Patrol, and Presentation modes. |
+| **[Recording](../operations/index.md#recording-operations)** | How to start, stop, and manage video recordings. |
+| **[Configuration](../operations/index.md#configuration-panel)** | Adjusting resolution, orientation, and UI settings. |
+
+<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
+  <strong>Pro Tip:</strong><br>
+  Right-click on any view to access quick actions like <strong>Save Image</strong> or <strong>Pause View</strong> without opening the main settings menu.
+</div>
+
