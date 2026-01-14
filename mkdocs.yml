@@ -25,8 +25,8 @@ theme:
   features:
     - navigation.top      
     - search.suggest         
-    - content.code.copy      
-
+    - content.code.copy
+    - toc.integrate
 
 extra_css:
   - stylesheets/extra.css
@@ -39,40 +39,10 @@ plugins:
 
 nav:
   - Home: index.md
-  - Release Notes:
-    - Overview: release-notes/index.md
-    - Highlights: /moil/release-notes/#highlights
-    - New Features: /moil/release-notes/#new-features
-    - Improvements: /moil/release-notes/#improvements
-    - Bug Fixes: /moil/release-notes/#bug-fixes
-    - Upgrade Notes: /moil/release-notes/#upgrade-notes
-    - Getting Started: /moil/release-notes/#getting-started
-    - Changelog: /moil/release-notes/#changelog
-  - Definition and Overview:
-    - What is the Moil Meeting: definition/index.md
-    - Key Features: /moil/definition/#key-features
-    - What is Fisheye Lens Technology?: /moil/definition/#what-is-fisheye-lens-technology
-  - Modes:
-    - Original Mode: modes/index.md
-    - Discussion Mode: /moil/modes/#discussion-mode
-    - Global Mode: /moil/modes/#global-mode
-    - Patrol Mode: /moil/modes/#patrol-mode
-    - Presentation Mode: /moil/modes/#presentation-mode
-    - AI Tracking: /moil/modes/#ai-tracking
-  - Moil Meeting Installation Guide:
-    - Operating System Requirements: install/index.md
-    - User Installation Guide: /moil/install/#user-installation-guide
-    - Developer Installation Guide: /moil/install/#developer-installation-guide
+  - Release Notes: release-notes/index.md
+  - Definition and Overview: definition/index.md
+  - Modes: modes/index.md
+  - Moil Meeting Installation Guide: install/index.md
   - Moil Meeting Of Usage: usage/index.md
-  - Operations of the Moil Meeting:
-    - Overview of Apps: operations/index.md
-    - Quick Start: /moil/operations/#quick-start
-    - Start Camera and Stop Camera: /moil/operations/#start-camera-and-stop-camera
-    - Start Recording and Stop Recording: /moil/operations/#start-recording-and-stop-recording
-    - Original Mode: /moil/operations/#original-mode
-    - Discussion Mode: /moil/operations/#discussion-mode
-    - Global Mode: /moil/operations/#global-mode
-    - Patrol Mode: /moil/operations/#patrol-mode
-    - Presentation Mode: /moil/operations/#presentation-mode
-    - Configuration Panel: /moil/operations/#configuration-panel
+  - Operations of the Moil Meeting: operations/index.md
 
