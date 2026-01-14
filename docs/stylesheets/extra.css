@@ -1,6 +1,33 @@
 /* docs/stylesheets/extra.css */
 
-/* 1. LAYOUT & ORDERING */
+/* ====================================
+   GLOBAL & LAYOUT
+   ==================================== */
+
+:root {
+  --md-header-height: 4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Invert colors for explicit elements in light mode */
+[data-md-color-scheme="default"] .light-mode-invert {
+  filter: invert(1);
+}
+
+/* ====================================
+   HEADER & NAVIGATION
+   ==================================== */
+
+/* Sticky Header */
+.md-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .md-header__inner {
   display: flex !important;
   justify-content: space-between;
@@ -8,11 +35,7 @@
   width: 100%;
 }
 
-/* 
-   Container for Title/Topic.
-   The version dropdown lives inside here usually.
-   MOVED TO RIGHT OF REPO (Order 50)
-*/
+/* Header Title Container (Repositories) */
 .md-header__title {
   display: flex !important;
   align-items: center !important;
@@ -21,23 +44,31 @@
   padding: 0;
   width: auto;
   order: 50;
-  /* Moved to far right */
+  /* Right side */
   height: 100%;
 }
 
-/* Hide ONLY the text spans of the title. */
+/* Ensure Title & Version remain visible on scroll */
+.md-header[data-md-state="shadow"] .md-header__title,
+.md-header[data-md-state="shadow"] .md-header__topic {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  transform: none !important;
+  transition: none !important;
+}
+
 .md-header__topic .md-ellipsis {
   display: none !important;
 }
 
-/* Ensure the topic container itself is visible */
 .md-header__topic {
   display: flex !important;
   align-items: center;
   height: 100%;
 }
 
-/* LOGO -> Left (Order 0) */
+/* Logo */
 .md-header__button.md-logo {
   order: 0;
   margin-right: 1rem;
@@ -50,7 +81,7 @@
   max-height: 48px;
 }
 
-/* SEARCH -> Centered and Long */
+/* Search Bar */
 .md-search {
   order: 10;
   flex-grow: 1;
@@ -58,85 +89,19 @@
   margin: 0 2rem;
 }
 
-/* ACTIONS -> Right */
-
-/* Theme Toggle (Order 30) */
-.md-header__option {
-  order: 30;
-  margin-left: 0.5rem;
-}
-
-/* Repo Link (Order 40) */
-.md-header__source {
-  order: 40;
-  margin-left: 0.5rem;
-}
-
-/* Version Dropdown (Order 50 - Match Title) */
-.md-version {
-  /* It is often inside header__title, but we target it cleanly */
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center;
-  height: auto;
-  margin: 0 0 0 1rem;
-  /* Adjust margin for end position */
-  order: 50;
-
-  /* Reset any potential weird margins */
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  top: 0 !important;
-
-  /* Styling to make it look like a button/dropdown */
-  visibility: visible !important;
-  opacity: 1 !important;
-  color: inherit !important;
-  z-index: 100;
-}
-
-/* Hide Version Dropdown when Search is Active/Focused */
-.md-header__inner:has(.md-search__input:focus) .md-version {
-  display: none !important;
-}
-
-/* Add "Version : " Prefix with COLON */
-.md-version__button::before {
-  content: "Version : ";
-  margin-right: 0.4em;
-  font-weight: normal;
-  opacity: 0.9;
-}
-
-/* Make the version text cleaner and assure alignment */
-.md-version__button {
-  font-weight: bold;
-  font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  line-height: inherit;
-  padding-top: 2px;
-}
-
-/* Search bar uses default MkDocs Material styling */
-
-/* Make search bar always expanded (same as when focused) */
-.md-search__form {
-  width: 100% !important;
-}
-
-.md-search__inner {
+.md-search__form,
+.md-search__inner,
+.md-search__input {
   width: 100% !important;
 }
 
 .md-search__input {
-  width: 100% !important;
   padding-left: 2.8rem !important;
   background-color: rgba(0, 0, 0, 0.1) !important;
   border-radius: 0.2rem;
   transition: background-color 0.2s ease;
-  /* Force always visible like when focused */
   opacity: 1 !important;
+  /* Always visible */
   transform: none !important;
 }
 
@@ -162,16 +127,67 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* 3. GLOBAL ADJUSTMENTS */
-html {
-  scroll-behavior: smooth;
+/* Actions */
+.md-header__option {
+  order: 30;
+  margin-left: 0.5rem;
 }
 
-:root {
-  --md-header-height: 4rem;
+.md-header__source {
+  order: 40;
+  margin-left: 0.5rem;
 }
 
-/* 4. FOOTER STYLING - Minimalist Design */
+/* Version Dropdown */
+.md-version {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  height: auto;
+  margin-left: 1rem;
+  order: 50;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  top: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: inherit !important;
+  z-index: 100;
+}
+
+/* Ensure Version remains visible on scroll */
+.md-header[data-md-state="shadow"] .md-version {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.md-header__inner:has(.md-search__input:focus) .md-version {
+  display: none !important;
+}
+
+.md-version__button::before {
+  content: "Version : ";
+  margin-right: 0.4em;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.md-version__button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  line-height: inherit;
+  padding-top: 2px;
+}
+
+/* ====================================
+   FOOTER STYLING
+   ==================================== */
+
 .md-footer {
   background-color: var(--md-footer-bg-color, #1a1a2e);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -183,14 +199,12 @@ html {
 
 .md-footer-meta__inner {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   min-height: 36px;
 }
 
-/* Footer branding with logo and title */
 .md-footer-branding {
   display: flex;
   align-items: center;
@@ -210,7 +224,6 @@ html {
   transform: translateY(-1px);
 }
 
-/* Logo matches footer height */
 .md-footer-branding__logo {
   height: 28px;
   width: 28px;
@@ -226,18 +239,12 @@ html {
   opacity: 0.95;
 }
 
-/* Footer copyright - inline with branding */
 .md-footer-copyright {
   color: var(--md-footer-fg-color--lighter, rgba(255, 255, 255, 0.5));
   font-size: 0.7rem;
   text-align: right;
 }
 
-.md-footer-copyright__highlight {
-  opacity: 0.8;
-}
-
-/* Footer social links - inline */
 .md-footer-social {
   display: flex;
   align-items: center;
@@ -261,30 +268,24 @@ html {
   height: 1rem;
 }
 
-/* ============================================
-   5. MOBILE RESPONSIVE STYLES
-   ============================================ */
+/* ====================================
+   MOBILE RESPONSIVE
+   ==================================== */
 
-/* Tablet and smaller screens (below 960px) */
+/* Tablet (< 960px) */
 @media screen and (max-width: 959px) {
-
-  /* Header adjustments */
   .md-header__inner {
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
     gap: 0.5rem;
   }
 
-  /* Reduce logo size */
   .md-header__button.md-logo img,
   .md-header__button.md-logo svg {
     height: 2.5rem;
     max-height: 40px;
   }
 
-  /* Search uses default MkDocs styling */
-
-  /* Version dropdown - more compact */
   .md-version__button::before {
     content: "v";
     margin-right: 0.2em;
@@ -300,15 +301,12 @@ html {
   }
 }
 
-/* Mobile screens (below 768px) */
+/* Mobile (< 768px) */
 @media screen and (max-width: 767px) {
-
-  /* Root adjustments for mobile */
   :root {
     --md-header-height: auto;
   }
 
-  /* Header layout for mobile */
   .md-header__inner {
     display: flex !important;
     flex-wrap: nowrap;
@@ -318,7 +316,6 @@ html {
     min-height: 56px;
   }
 
-  /* Logo - smaller on mobile */
   .md-header__button.md-logo {
     order: 0;
     margin-right: 0.5rem;
@@ -331,12 +328,10 @@ html {
     max-height: 32px;
   }
 
-  /* Search uses default MkDocs mobile behavior */
   .md-search {
     order: 20;
   }
 
-  /* Version dropdown - minimal on mobile */
   .md-version {
     order: 15;
     margin: 0 0.25rem;
@@ -354,7 +349,6 @@ html {
     border-radius: 4px;
   }
 
-  /* Theme toggle smaller */
   .md-header__option {
     order: 25;
     margin-left: 0.25rem;
@@ -364,12 +358,10 @@ html {
     transform: scale(0.9);
   }
 
-  /* Repo link */
   .md-header__source {
     display: none;
   }
 
-  /* Title container - hide text to avoid overlap */
   .md-header__title {
     flex: 1;
     min-width: 0;
@@ -378,7 +370,7 @@ html {
     margin-left: 0.5rem;
   }
 
-  /* Navigation drawer header - Logo on top, title below, centered */
+  /* Nav Drawer */
   .md-nav--primary .md-nav__title {
     display: flex !important;
     flex-direction: column !important;
@@ -391,14 +383,12 @@ html {
     height: auto !important;
   }
 
-  /* Hide the back button on main drawer */
   .md-nav--primary>.md-nav__title .md-nav__button {
     position: absolute;
     left: 0.5rem;
     top: 0.5rem;
   }
 
-  /* Logo centered and on top - override all positioning */
   .md-nav--primary .md-nav__title .md-logo,
   .md-nav--primary>.md-nav__title .md-logo,
   .md-nav__title .md-logo {
@@ -406,21 +396,15 @@ html {
     display: block !important;
     position: static !important;
     margin: 0 auto 0.75rem !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
+    height: auto !important;
   }
 
   .md-nav--primary .md-nav__title .md-logo img,
-  .md-nav--primary .md-nav__title .md-logo svg,
-  .md-nav__title .md-logo img,
-  .md-nav__title .md-logo svg {
+  .md-nav--primary .md-nav__title .md-logo svg {
     height: 3rem !important;
     width: auto !important;
-    position: static !important;
   }
 
-  /* Title text centered below logo */
   .md-nav--primary>.md-nav__title>.md-ellipsis,
   .md-nav--primary>.md-nav__title>label,
   .md-nav__title .md-ellipsis {
@@ -437,56 +421,12 @@ html {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  /* Smaller menu items */
   .md-nav--primary .md-nav__link {
     padding: 0.6rem 0.875rem;
     font-size: 0.85rem;
-    line-height: 1.3;
   }
 
-  /* Nested nav items even smaller */
-  .md-nav--primary .md-nav--secondary .md-nav__link {
-    padding: 0.5rem 0.875rem 0.5rem 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  /* Touch-friendly spacing */
-  .md-nav--primary .md-nav__link--active {
-    background: rgba(var(--md-primary-fg-color--light), 0.1);
-  }
-
-  /* Content area */
-  .md-content {
-    padding: 0 0.75rem;
-  }
-
-  .md-content__inner {
-    padding: 1rem 0;
-  }
-
-  /* Tables scroll horizontally */
-  .md-typeset table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Code blocks */
-  .md-typeset pre {
-    margin: 1rem -0.75rem;
-    border-radius: 0;
-  }
-
-  .md-typeset pre code {
-    padding: 0.75rem;
-    font-size: 0.8rem;
-  }
-
-  /* Footer mobile - stacked minimalist */
-  .md-footer-meta {
-    padding: 0.5rem 0.75rem;
-  }
-
+  /* Footer Mobile */
   .md-footer-meta__inner {
     flex-direction: column;
     gap: 0.4rem;
@@ -506,13 +446,9 @@ html {
     font-size: 0.6rem;
     text-align: center;
   }
-
-  .md-footer-social {
-    gap: 0.5rem;
-  }
 }
 
-/* Extra small screens (below 480px) */
+/* Extra Small (< 480px) */
 @media screen and (max-width: 479px) {
   .md-header__inner {
     padding: 0.4rem 0.5rem;
@@ -525,17 +461,11 @@ html {
     max-height: 28px;
   }
 
-  .md-header__button.md-logo {
-    margin-right: 0.25rem;
-  }
-
-  /* Hide version on very small screens, show only icon */
   .md-version__button {
     font-size: 0.7rem;
     padding: 3px 5px;
   }
 
-  /* Content typography */
   .md-typeset h1 {
     font-size: 1.5rem;
   }
@@ -544,96 +474,24 @@ html {
     font-size: 1.25rem;
   }
 
-  .md-typeset h3 {
-    font-size: 1.1rem;
-  }
-
-  .md-typeset {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-
-  /* Footer extra small */
   .md-footer-branding {
     flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .md-footer-branding__link {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .md-footer-social {
-    gap: 0.75rem;
-  }
-
-  .md-footer-social__link svg {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 }
 
-/* Touch device improvements */
+/* Touch Interface */
 @media (hover: none) and (pointer: coarse) {
 
-  /* Larger touch targets */
-  .md-nav__link {
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-  }
-
+  .md-nav__link,
   .md-header__button {
-    min-width: 44px;
     min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Smooth scrolling for touch */
-  .md-content__inner,
-  .md-sidebar__scrollwrap {
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Remove hover effects that don't work on touch */
-  .md-nav__link:hover {
-    background: transparent;
-  }
-
-  /* Active states for touch feedback */
-  .md-nav__link:active {
-    background: rgba(0, 0, 0, 0.1);
   }
 }
 
-/* Landscape mobile orientation */
-@media screen and (max-height: 500px) and (orientation: landscape) {
-  .md-header {
-    position: relative;
-  }
+/* ====================================
+   SCROLL ANIMATIONS
+   ==================================== */
 
-  .md-tabs {
-    display: none;
-  }
-
-  .md-main {
-    padding-top: 0;
-  }
-}
-
-/* Invert colors for specific elements in light mode */
-[data-md-color-scheme="default"] .light-mode-invert {
-  filter: invert(1);
-}
-
-/* ============================================
-   6. SCROLL ANIMATIONS
-   ============================================ */
-
-/* Initial state for upgrade - elements are hidden */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
@@ -648,10 +506,7 @@ html {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Visible state */
 .is-visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-
-/* Stagger animations slightly if needed, or keep generic */
