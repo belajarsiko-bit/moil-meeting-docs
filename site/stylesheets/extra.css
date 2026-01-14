@@ -257,8 +257,6 @@
   height: 1rem;
 }
 
-/* Footer is already horizontal by default, no need for 768px+ styles */
-
 /* ============================================
    5. MOBILE RESPONSIVE STYLES
    ============================================ */
@@ -367,7 +365,7 @@
     display: none;
   }
 
-  /* Title container */
+  /* Title container - hide text to avoid overlap */
   .md-header__title {
     flex: 1;
     min-width: 0;
@@ -376,20 +374,76 @@
     margin-left: 0.5rem;
   }
 
-  /* Navigation drawer improvements */
+  /* Navigation drawer header - Logo on top, title below, centered */
   .md-nav--primary .md-nav__title {
-    padding: 1rem;
-    font-size: 1rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 1.5rem 1rem 1rem !important;
+    text-align: center;
     background: var(--md-primary-fg-color);
+    position: relative;
+    height: auto !important;
+  }
+
+  /* Hide the back button on main drawer */
+  .md-nav--primary>.md-nav__title .md-nav__button {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  /* Logo centered and on top - override all positioning */
+  .md-nav--primary .md-nav__title .md-logo,
+  .md-nav--primary>.md-nav__title .md-logo,
+  .md-nav__title .md-logo {
+    order: -1 !important;
+    display: block !important;
+    position: static !important;
+    margin: 0 auto 0.75rem !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .md-nav--primary .md-nav__title .md-logo img,
+  .md-nav--primary .md-nav__title .md-logo svg,
+  .md-nav__title .md-logo img,
+  .md-nav__title .md-logo svg {
+    height: 3rem !important;
+    width: auto !important;
+    position: static !important;
+  }
+
+  /* Title text centered below logo */
+  .md-nav--primary>.md-nav__title>.md-ellipsis,
+  .md-nav--primary>.md-nav__title>label,
+  .md-nav__title .md-ellipsis {
+    order: 1 !important;
+    display: block !important;
+    width: 100%;
+    text-align: center !important;
+    font-weight: 600;
+    font-size: 0.95rem !important;
+    margin-top: 0 !important;
   }
 
   .md-nav--primary .md-nav__item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
+  /* Smaller menu items */
   .md-nav--primary .md-nav__link {
-    padding: 0.875rem 1rem;
-    font-size: 0.95rem;
+    padding: 0.6rem 0.875rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  /* Nested nav items even smaller */
+  .md-nav--primary .md-nav--secondary .md-nav__link {
+    padding: 0.5rem 0.875rem 0.5rem 1.5rem;
+    font-size: 0.8rem;
   }
 
   /* Touch-friendly spacing */

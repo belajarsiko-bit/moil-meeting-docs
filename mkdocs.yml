@@ -40,38 +40,39 @@ plugins:
 nav:
   - Home: index.md
   - Release Notes:
-    - Overview: release-notes/overview.md
-    - Highlights: release-notes/highlights.md
-    - New Features: release-notes/new-features.md
-    - Improvements: release-notes/improvements.md
-    - Bug Fixes: release-notes/bug-fixes.md
-    - Upgrade Notes: release-notes/upgrade-notes.md
-    - Getting Started: release-notes/getting-started.md
-    - Changelog: release-notes/changelog.md
+    - Overview: release-notes/index.md
+    - Highlights: /moil/release-notes/#highlights
+    - New Features: /moil/release-notes/#new-features
+    - Improvements: /moil/release-notes/#improvements
+    - Bug Fixes: /moil/release-notes/#bug-fixes
+    - Upgrade Notes: /moil/release-notes/#upgrade-notes
+    - Getting Started: /moil/release-notes/#getting-started
+    - Changelog: /moil/release-notes/#changelog
   - Definition and Overview:
-    - What is the Moil Meeting: definition/what-is-moil.md
-    - Key Features: definition/key-features.md
-    - What is Fisheye Lens Technology?: definition/fisheye-tech.md
+    - What is the Moil Meeting: definition/index.md
+    - Key Features: /moil/definition/#key-features
+    - What is Fisheye Lens Technology?: /moil/definition/#what-is-fisheye-lens-technology
   - Modes:
-    - Original Mode: modes/original.md
-    - Discussion Mode: modes/discussion.md
-    - Global Mode: modes/global.md
-    - Patrol Mode: modes/patrol.md
-    - Presentation Mode: modes/presentation.md
-    - AI Tracking: modes/ai-tracking.md
+    - Original Mode: modes/index.md
+    - Discussion Mode: /moil/modes/#discussion-mode
+    - Global Mode: /moil/modes/#global-mode
+    - Patrol Mode: /moil/modes/#patrol-mode
+    - Presentation Mode: /moil/modes/#presentation-mode
+    - AI Tracking: /moil/modes/#ai-tracking
   - Moil Meeting Installation Guide:
-    - Operating System Requirements: install/requirements.md
-    - User Installation Guide: install/user-guide.md
-    - Developer Installation Guide: install/dev-guide.md
+    - Operating System Requirements: install/index.md
+    - User Installation Guide: /moil/install/#user-installation-guide
+    - Developer Installation Guide: /moil/install/#developer-installation-guide
   - Moil Meeting Of Usage: usage/index.md
   - Operations of the Moil Meeting:
-    - Overview of Apps: operations/overview-of-apps.md
-    - Quick Start: operations/quick-start.md
-    - Start Camera and Stop Camera: operations/start-camera.md
-    - Start Recording and Stop Recording: operations/recording.md
-    - Original Mode: operations/original-mode.md
-    - Discussion Mode: operations/discussion-mode.md
-    - Global Mode: operations/global-mode.md
-    - Patrol Mode: operations/patrol-mode.md
-    - Presentation Mode: operations/presentation-mode.md
-    - Configuration Panel: operations/configuration-panel.md
+    - Overview of Apps: operations/index.md
+    - Quick Start: /moil/operations/#quick-start
+    - Start Camera and Stop Camera: /moil/operations/#start-camera-and-stop-camera
+    - Start Recording and Stop Recording: /moil/operations/#start-recording-and-stop-recording
+    - Original Mode: /moil/operations/#original-mode
+    - Discussion Mode: /moil/operations/#discussion-mode
+    - Global Mode: /moil/operations/#global-mode
+    - Patrol Mode: /moil/operations/#patrol-mode
+    - Presentation Mode: /moil/operations/#presentation-mode
+    - Configuration Panel: /moil/operations/#configuration-panel
+

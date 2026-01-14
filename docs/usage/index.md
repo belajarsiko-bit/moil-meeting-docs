@@ -13,10 +13,10 @@ Moil Meeting is a powerful video conferencing application that leverages fisheye
 
 ## Quick Navigation
 
-- [Operations of the Moil Meeting](../operations/overview-of-apps.md) - Learn how to operate the application
-- [Quick Start](../operations/quick-start.md) - Get started quickly
-- [Camera Controls](../operations/start-camera.md) - Manage camera operations
-- [Recording](../operations/recording.md) - Record your meetings
+- [Operations of the Moil Meeting](../operations/index.md#operations-of-the-moil-meeting) - Learn how to operate the application
+- [Quick Start](../operations/index.md#quick-start) - Get started quickly
+- [Camera Controls](../operations/index.md#start-camera-and-stop-camera) - Manage camera operations
+- [Recording](../operations/index.md#start-recording-and-stop-recording) - Record your meetings
 
 ## Usage Tips
 
