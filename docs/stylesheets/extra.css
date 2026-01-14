@@ -112,8 +112,33 @@ html {
   transform: none !important;
 }
 
-.md-search__input::placeholder {
+/* Ensure the copy button is visible on dark background */
+.md-clipboard:after {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* ====================================
+   TABLE STYLING (Force Borders)
+   ==================================== */
+.md-typeset table {
+  border: 1px solid rgba(128, 128, 128, 0.4) !important;
+  border-collapse: collapse !important;
+  display: table !important;
+  width: 100%;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  border: 1px solid rgba(128, 128, 128, 0.4) !important;
+  padding: 0.6em 1em;
+}
+
+/* Ensure mobile table scrolling still works but keeps borders */
+@media screen and (max-width: 767px) {
+  .md-typeset table {
+    display: block !important;
+    overflow-x: auto;
+  }
 }
 
 .md-search__input:hover,
@@ -495,9 +520,7 @@ html {
   }
 }
 
-/* ====================================
-   SCROLL ANIMATIONS
-   ==================================== */
+
 
 /* ====================================
    SCROLL ANIMATIONS

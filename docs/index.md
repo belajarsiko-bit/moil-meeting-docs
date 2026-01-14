@@ -64,6 +64,6 @@ Step-by-step instructions for mastering the application, from [Starting the Came
 ---
 
 <div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Current Version: v2.0</strong><br>
+  <strong>Current Version: 1.2</strong><br>
   For a detailed log of changes and enhancements, please view the <a href="release-notes/">Changelog</a>.
 </div>

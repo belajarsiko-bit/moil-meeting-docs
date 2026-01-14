@@ -1,16 +1,16 @@
 # Release Notes
 
-## Moil Meeting Desktop Application v2.0
+## Moil Meeting Desktop Application v1.2
 
 **Release Date:** August 19, 2025
 
-We are pleased to announce the official launch of **Moil Meeting Desktop Application v2.0**. This major release introduces a comprehensive suite of core features designed to streamline online meetings and team collaboration within a modern, high-performance interface.
+We are pleased to announce the official launch of **Moil Meeting Desktop Application v1.2**. This major release introduces a comprehensive suite of core features designed to streamline online meetings and team collaboration within a modern, high-performance interface.
 
 ---
 
 ### Overview
 
-Moil Meeting v2.0 represents a significant milestone in our commitment to providing a seamless communication experience. This version focuses on stability, usability, and cross-platform compatibility, ensuring that your meetings are productive regardless of your device or connection quality.
+Moil Meeting v1.2 represents a significant milestone in our commitment to providing a seamless communication experience. This version focuses on stability, usability, and cross-platform compatibility, ensuring that your meetings are productive regardless of your device or connection quality.
 
 ### Highlights
 
@@ -48,7 +48,7 @@ Moil Meeting v2.0 represents a significant milestone in our commitment to provid
 
 ### Upgrade Instructions
 
-**No special actions are required.** Existing users can upgrade directly to v2.0. All user configurations and data will be preserved automatically.
+**No special actions are required.** Existing users can upgrade directly to v1.2. All user configurations and data will be preserved automatically.
 
 ### Getting Started
 
@@ -65,7 +65,7 @@ Moil Meeting v2.0 represents a significant milestone in our commitment to provid
 
 ### Changelog
 
-**v2.0 (2025-08-19)**
+**v1.2 (2025-08-19)**
 
 | Type | Description |
 | :--- | :--- |
