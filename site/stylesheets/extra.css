@@ -28,6 +28,13 @@ html {
   z-index: 10;
 }
 
+/* Mobile Drawer (Sidebar) - Ensure it's ABOVE the header */
+.md-sidebar--primary,
+.md-sidebar--secondary,
+.md-overlay {
+  z-index: 5000 !important;
+}
+
 .md-header__inner {
   display: flex !important;
   justify-content: space-between;
