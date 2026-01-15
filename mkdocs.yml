@@ -26,7 +26,6 @@ theme:
   logo: assets/images/ui/moil_meeting_app.png
   features:
     - navigation.top      
-    - search.suggest         
     - content.code.copy
     - toc.integrate
 
