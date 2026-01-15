@@ -46,8 +46,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Space Grotesk";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -130,20 +130,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -670,22 +670,27 @@
 <hr />
 <h2 id="operating-system-requirements">Operating System Requirements</h2>
 <h3 id="windows">Windows</h3>
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Prerequisites for Windows:</strong><br>
-  1. Download and install <a href="https://obsproject.com/download">OBS Studio</a>.<br>
-  2. Open OBS and click <strong>Start Virtual Camera</strong> before launching Moil Meeting.
+<div class="admonition note">
+<p class="admonition-title">Prerequisites for Windows</p>
+<ol>
+<li>Download and install <a href="https://obsproject.com/download">OBS Studio</a>.</li>
+<li>Open OBS and click <strong>Start Virtual Camera</strong> before launching Moil Meeting.</li>
+</ol>
 </div>
-
 <p><img alt="Start Camera in OBS" src="https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start_camera.png" />
 <em>Start Virtual Camera in OBS Studio</em></p>
 <h3 id="linux">Linux</h3>
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Prerequisites for Linux:</strong><br>
-  1. Disable <strong>Secure Boot</strong> in BIOS settings.<br>
-  2. Install the <code>v4l2loopback</code> kernel module:
-  <pre>sudo apt install v4l2loopback-dkms</pre>
+<div class="admonition note">
+<p class="admonition-title">Prerequisites for Linux</p>
+<ol>
+<li>Disable <strong>Secure Boot</strong> in BIOS settings.</li>
+<li>
+<p>Install the <code>v4l2loopback</code> kernel module:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>v4l2loopback-dkms
+</code></pre></div>
+</li>
+</ol>
 </div>
-
 <hr />
 <h2 id="user-installation-guide">User Installation Guide</h2>
 <h3 id="download-moil-meeting">Download Moil Meeting</h3>
@@ -793,11 +798,10 @@ venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
 </ol>
 <hr />
 <h2 id="post-installation">Post-Installation</h2>
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Success!</strong><br>
-  Installation is complete. Please proceed to the <a href="../usage/index.md">Usage Guide</a> to learn how to operate Moil Meeting.
+<div class="admonition note">
+<p class="admonition-title">Success</p>
+<p>Installation is complete. Please proceed to the <a href="../usage/">Usage Guide</a> to learn how to operate Moil Meeting.</p>
 </div>
-
 <h2 id="troubleshooting">Troubleshooting</h2>
 <table>
 <thead>
