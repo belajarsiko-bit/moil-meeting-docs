@@ -7,19 +7,22 @@ theme:
   name: material
   custom_dir: overrides
   language: en
+  font:
+    text: Space Grotesk
+    code: JetBrains Mono
   palette:
-    - scheme: slate
-      primary: blue
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
     - scheme: default
       primary: blue
-      accent: purple
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   logo: assets/images/ui/moil_meeting_app.png
   features:
     - navigation.top      
@@ -53,4 +56,3 @@ nav:
   - Modes: modes/index.md
   - Moil Meeting Of Usage: usage/index.md
   - Operations of the Moil Meeting: operations/index.md
-

@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+        return;
+    }
+
+    document.documentElement.classList.add("mm-animate");
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',

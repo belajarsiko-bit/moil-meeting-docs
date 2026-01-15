@@ -8,23 +8,22 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
 
 ### Windows
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Prerequisites for Windows:</strong><br>
-  1. Download and install <a href="https://obsproject.com/download">OBS Studio</a>.<br>
-  2. Open OBS and click <strong>Start Virtual Camera</strong> before launching Moil Meeting.
-</div>
+!!! note "Prerequisites for Windows"
+    1. Download and install [OBS Studio](https://obsproject.com/download).
+    2. Open OBS and click **Start Virtual Camera** before launching Moil Meeting.
 
 ![Start Camera in OBS](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start_camera.png)
 *Start Virtual Camera in OBS Studio*
 
 ### Linux
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Prerequisites for Linux:</strong><br>
-  1. Disable <strong>Secure Boot</strong> in BIOS settings.<br>
-  2. Install the <code>v4l2loopback</code> kernel module:
-  <pre>sudo apt install v4l2loopback-dkms</pre>
-</div>
+!!! note "Prerequisites for Linux"
+    1. Disable **Secure Boot** in BIOS settings.
+    2. Install the `v4l2loopback` kernel module:
+
+        ```bash
+        sudo apt install v4l2loopback-dkms
+        ```
 
 ---
 
@@ -141,10 +140,8 @@ This section is for developers who want to run Moil Meeting from source code.
 
 ## Post-Installation
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Success!</strong><br>
-  Installation is complete. Please proceed to the <a href="../usage/index.md">Usage Guide</a> to learn how to operate Moil Meeting.
-</div>
+!!! note "Success"
+    Installation is complete. Please proceed to the [Usage Guide](../usage/index.md) to learn how to operate Moil Meeting.
 
 ## Troubleshooting
 

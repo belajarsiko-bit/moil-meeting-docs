@@ -36,8 +36,5 @@ For specific instructions, refer to the detailed sections below:
 | **[Recording](../operations/index.md#recording-operations)** | How to start, stop, and manage video recordings. |
 | **[Configuration](../operations/index.md#configuration-panel)** | Adjusting resolution, orientation, and UI settings. |
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Pro Tip:</strong><br>
-  Right-click on any view to access quick actions like <strong>Save Image</strong> or <strong>Pause View</strong> without opening the main settings menu.
-</div>
-
+!!! note "Pro Tip"
+    Right-click on any view to access quick actions like **Save Image** or **Pause View** without opening the main settings menu.

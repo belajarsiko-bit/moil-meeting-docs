@@ -1,3 +1,7 @@
+# Operations Guide
+
+Use this guide to run Moil Meeting day to day. Start with the Quick Start Guide, then return here as a reference.
+
 ## Application Overview
 
 **Fisheye Video Conference System** is a video conferencing application designed with a streamlined and modern interface. Upon launch, users are immediately presented with the main dashboard for rapid access to core functionalities.
@@ -252,10 +256,8 @@ Customize how a specific view is de-warped.
 ![Adjusted Transform](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/adjust_transform_v2.png)
 *Visual Adjustment Tool*
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Note: Mouse Press Event</strong><br>
-  Mouse interactions significantly enhance navigation control across all modes.
-</div>
+!!! note "Mouse Press Event"
+    Mouse interactions significantly enhance navigation control across all modes.
 
 ---
 
@@ -276,10 +278,8 @@ Use the mouse wheel to zoom in and out.
 
 ![Scroll Zoom](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/scroll_up_down.png)
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Tip:</strong><br>
-  Use <strong>Transformation</strong> and <strong>Adjusted Transform</strong> features to precisely focus on specific objects while referencing the original image for context.
-</div>
+!!! note "Tip"
+    Use **Transformation** and **Adjusted Transform** features to precisely focus on specific objects while referencing the original image for context.
 
 ---
 

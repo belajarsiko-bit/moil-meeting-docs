@@ -1,3 +1,7 @@
+# Modes
+
+Learn which mode fits each meeting or monitoring scenario. Each mode is optimized for a specific type of room activity.
+
 ## Operational Modes
 
 ### Original Mode
@@ -48,11 +52,8 @@ Available across all modes, AI Tracking uses sound localization and motion detec
 
 ![AI Tracking](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/ai_tracking_on.png)
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>💡 Optimizing Your Experience</strong><br>
-  Combine AI Tracking with the appropriate mode:
-  <ul>
-    <li><strong>Discussion Mode</strong>: To automatically highlight speakers in a panel.</li>
-    <li><strong>Presentation Mode</strong>: To follow a lecturer walking across a stage.</li>
-  </ul>
-</div>
+!!! note "Optimizing Your Experience"
+    Combine AI Tracking with the appropriate mode:
+
+    - **Discussion Mode**: Automatically highlight speakers in a panel.
+    - **Presentation Mode**: Follow a lecturer walking across a stage.

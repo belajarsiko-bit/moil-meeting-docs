@@ -56,10 +56,8 @@ Moil Meeting v1.2 represents a significant milestone in our commitment to provid
 2.  **Launch:** Open the application and configure your camera.
 3.  **Explore:** Use **Help → What's New** to tour the latest features.
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; color: #856404; border-radius: 4px;">
-  <strong>Note:</strong><br>
-  Need assistance or found a bug? Navigate to <strong>Help → Report an Issue</strong> or contact the Moil support team.
-</div>
+!!! note "Note"
+    Need assistance or found a bug? Navigate to **Help -> Report an Issue** or contact the Moil support team.
 
 ---
 
