@@ -33,7 +33,7 @@ For specific instructions, refer to the detailed sections below:
 | :--- | :--- |
 | **[Camera Controls](../operations/index.md#camera-operations)** | Starting, stopping, and selecting media sources. |
 | **[Mode Selection](../modes/index.md)** | detailed breakdown of Original, Discussion, Global, Patrol, and Presentation modes. |
-| **[Recording](../operations/index.md#recording-operations)** | How to start, stop, and manage video recordings. |
+| **[Recording](../operations/index.md#recording-functions)** | How to start, stop, and manage video recordings. |
 | **[Configuration](../operations/index.md#configuration-panel)** | Adjusting resolution, orientation, and UI settings. |
 
 !!! note "Pro Tip"

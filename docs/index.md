@@ -64,4 +64,4 @@ Step-by-step instructions for mastering the application, from [Starting the Came
 ---
 
 !!! note "Current Version: 1.2"
-    For a detailed log of changes and enhancements, please view the [Changelog](release-notes/).
+    For a detailed log of changes and enhancements, please view the [Changelog](release-notes/index.md).
