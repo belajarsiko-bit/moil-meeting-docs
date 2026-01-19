@@ -12,7 +12,7 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
     1. Download and install [OBS Studio](https://obsproject.com/download).
     2. Open OBS and click **Start Virtual Camera** before launching Moil Meeting.
 
-![Start Camera in OBS](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start_camera.png)
+![Start Camera in OBS](../assets/images/install/start_camera.png)
 *Start Virtual Camera in OBS Studio*
 
 ### Linux
@@ -36,7 +36,7 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
     *   **Windows**: `FisheyeVideoConferenceSystem-v1.1.6.exe`
     *   **Linux**: `FisheyeVideoConferenceSystem-v1.1.6-linux.7z`
 
-![Video Conference Repository](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/video_conference_repository.png)
+![Video Conference Repository](../assets/images/install/video_conference_repository.png)
 *Repository Release Page*
 
 ### Windows Installation
@@ -44,22 +44,23 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
 **Step 1: Run Installer**
 Right-click the installer file and select **Run as Administrator** to ensure proper permissions.
 
-![Run as Administrator](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/run_administrator.png)
+![Run as Administrator](../assets/images/install/run_administrator.png)
 
 **Step 2: Follow Wizard**
 Proceed through the installation wizard, selecting your preferred destination folder.
+![wait installation](../assets/images/install/wait.png)
 
 **Step 3: Access Application**
 After installation, locate the application in your selected folder.
 *   `FisheyeVideoConference.exe` — Launch the application.
 *   `unins000` — Uninstall the application.
 
-![Application Files](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/run_app.png)
+![Application Files](../assets/images/install/run_app.png)
 
 **Step 4: Launch**
 You are now ready to use the Moil Meeting system.
 
-![Moil Meeting Application](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/moil_app.png)
+![Moil Meeting Application](../assets/images/install/moil_app.png)
 *Moil Meeting Application Interface*
 
 ### Linux Installation
@@ -82,7 +83,7 @@ To remove the application later, use:
 **Step 3: Launch**
 Once installed, the application shortcut will appear on your desktop.
 
-![Linux Moil Meeting Application](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/linux_app.png)
+![Linux Moil Meeting Application](../assets/images/install/linux_app.png)
 *Moil Meeting on Linux Desktop*
 
 ---

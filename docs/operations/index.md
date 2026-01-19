@@ -17,7 +17,11 @@ The application features several distinct operational modes, accessible via the 
 - **Patrol Mode** — Automated surveillance scanning.
 - **Presentation Mode** — Optimized for content delivery and focus.
 
-![Application Overview](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/overview.png)
+<img
+  src="../assets/images/operations/overview.png"
+  alt="Application Overview"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Main Interface with Mode Selection*
 
 ---
@@ -30,7 +34,11 @@ Welcome to **Moil Meeting**, a comprehensive solution for 360° video conferenci
 
 Launch the application to access the main interface.
 
-![Start Screen](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/start.png)
+<img
+  src="../assets/images/operations/start.png"
+  alt="Start Screen"
+  style="width: 100%; height: auto; display: block;"
+/>
 
 ### Media Source Selection
 
@@ -40,7 +48,11 @@ Click the **START CAMERA** button to initiate the video feed. You will be prompt
 - **Load Media** — Play a pre-recorded video file.
 - **Camera URL** — Connect to an IP camera stream.
 
-![Original Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/original_mode_view.png)
+<img
+  src="../assets/images/operations/original_mode_view.png"
+  alt="Original Mode View"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Original Mode Active*
 
 Each source allows for detailed configuration, including resolution and frame rate adjustments.
@@ -49,13 +61,25 @@ Each source allows for detailed configuration, including resolution and frame ra
 
 Methods of operation can be switched dynamically. The application defaults to **Original Mode** upon initialization.
 
-![Discussion Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/disscusion_mode_view.png)
+<img
+  src="../assets/images/operations/disscusion_mode_view.png"
+  alt="Discussion Mode View"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Discussion Mode*
 
-![Patrol Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/patrol_mode_view.png)
+<img
+  src="../assets/images/operations/patrol_mode_view.png"
+  alt="Patrol Mode View"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Patrol Mode*
 
-![Presentation Mode View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/presentation_mode_view.png)
+<img
+  src="../assets/images/operations/presentation_mode_view.png"
+  alt="Presentation Mode View"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Presentation Mode*
 
 ---
@@ -64,7 +88,11 @@ Methods of operation can be switched dynamically. The application defaults to **
 
 ### Starting the Camera
 
-![Media Source Selection](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/select_media_source_v2.png)
+<img
+  src="../assets/images/operations/select_media_source_v2.png"
+  alt="Media Source Selection"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Source Selection Dialog*
 
 **Procedure:**
@@ -79,7 +107,12 @@ Methods of operation can be switched dynamically. The application defaults to **
 
 ### Camera Controls
 
-![Camera Controls](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/stop_play.png)
+<img
+  src="../assets/images/operations/stop_play.png"
+  alt="Camera Controls"
+  style="width: 100%; height: auto; display: block;"
+/>
+
 *Playback Controls*
 
 Once active, use the control bar to manage the feed:
@@ -97,7 +130,12 @@ Once active, use the control bar to manage the feed:
 1. Click the **Start Recording** button.
 2. A confirmation message, "Recording Started," will appear.
 
-![Recording Active](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/recording.png)
+<img
+  src="../assets/images/operations/recording.png"
+  alt="Recording Active"
+  style="width: 100%; height: auto; display: block;"
+/>
+
 *Recording Active*
 
 ### Stop Recording
@@ -105,7 +143,12 @@ Once active, use the control bar to manage the feed:
 1. Click **Stop Recording**.
 2. A "Recording Finished" confirmation will display the saved file path.
 
-![Recording Complete](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/stop_record.png)
+<img
+  src="../assets/images/operations/stop_record.png"
+  alt="Recording Complete"
+  style="width: 100%; height: auto; display: block;"
+/>
+
 *Recording Saved*
 
 ---
@@ -116,7 +159,11 @@ Once active, use the control bar to manage the feed:
 
 Displays the full **360-degree fisheye view**. This mode shows the complete, distorted image as captured by the sensor.
 
-![Original Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/original.png)
+<img
+  src="../assets/images/operations/original.png"
+  alt="Original Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
 *360° Fisheye View*
 
 **Key Benefits:**
@@ -129,14 +176,22 @@ Displays the full **360-degree fisheye view**. This mode shows the complete, dis
 
 Designed for multi-participant meetings, this mode creates virtual "cameras" from the single fisheye source.
 
-![Discussion Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/disscusion_newversion.png)
+<img
+  src="../assets/images/operations/disscusion_newversion.png"
+  alt="Discussion Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Discussion Mode Interface*
 
 #### Configuration
 
 Access settings via the **Config Button**:
 
-![Config Button](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/config_v2.png)
+<img
+  src="../assets/images/operations/config_v2.png"
+  alt="Config Button"
+  style="width: 100%; height: auto; display: block;"
+/>
 
 **Features:**
 - **Limit Person**: Choose between 2, 3, 4, 6, or 8 participant views.
@@ -144,21 +199,35 @@ Access settings via the **Config Button**:
 - **Layout Slider**: Dynamically resize video windows.
 - **Panorama**: Toggle the panoramic strip at the top.
 
-![Limit Person](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/limit_person.png)
+<img
+  src="../assets/images/operations/limit_person.png"
+  alt="Limit Person"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Participant Limit Selection*
 
 **Panorama Toggle:**
 - **Show Panorama**: Enables a wide strip showing the entire room context.
 - **Hide Panorama**: Focuses solely on individual participants.
 
-![Right-Click Menu](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/right_clicked_v2.png)
+<img
+  src="../assets/images/operations/right_clicked_v2.png"
+  alt="Right-Click Menu"
+  style="width: 100%; height: auto; display: block;"
+/>
+
 *Right-click Context Menu*
 
 ### Global Mode
 
 Displays a dual-panoramic strip, effectively "unwrapping" the 360° image into a flat view.
 
-![Global Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/global_mode.png)
+<img
+  src="../assets/images/operations/global_mode.png"
+  alt="Global Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
+
 *Global Panoramic View*
 
 **Features:**
@@ -169,7 +238,11 @@ Displays a dual-panoramic strip, effectively "unwrapping" the 360° image into a
 
 Automates monitoring by panning the virtual view across the panoramic scene.
 
-![Patrol Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/patrol_mode_v2.png)
+<img
+  src="../assets/images/operations/patrol_mode_v2.png"
+  alt="Patrol Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Patrol Mode*
 
 **Features:**
@@ -180,7 +253,11 @@ Automates monitoring by panning the virtual view across the panoramic scene.
 
 Focuses on a specific area of interest, such as a whiteboard or speaker, while minimizing distortion.
 
-![Presentation Mode](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/presentation_mode_v2.png)
+<img
+  src="../assets/images/operations/presentation_mode_v2.png"
+  alt="Presentation Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Presentation Focus*
 
 **Usage:**
@@ -197,7 +274,11 @@ Access system-wide settings via the **Config Button**.
 
 Displays technical details about the current video source.
 
-![Camera Information](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/camera_information_v2.png)
+<img
+  src="../assets/images/operations/camera_information_v2.png"
+  alt="Camera Information"
+  style="width: 100%; height: auto; display: block;"
+/>
 
 - **Model & Version**: Hardware and software identifiers.
 - **Video Stats**: Resolution and Field of View (FOV).
@@ -207,10 +288,18 @@ Displays technical details about the current video source.
 
 Toggle overlay labels for camera views.
 
-![Show View Number](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/view_number_v2.png)
+<img
+  src="../assets/images/operations/view_number_v2.png"
+  alt="Show View Number"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Labels Visible*
 
-![Hide View Number](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/hide_view_number_v2.png)
+<img
+  src="../assets/images/operations/hide_view_number_v2.png"
+  alt="Hide View Number"
+  style="width: 100%; height: auto; display: block;"
+/>
 *Labels Hidden*
 
 **Reset Labels:** Restores default naming and positioning.
@@ -223,7 +312,7 @@ Toggle overlay labels for camera views.
 - **UI Scale**: Increase or decrease interface size for readability.
 - **Cache**: Import/Export/Reset configuration cache.
 
-![Resolution Settings](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/resolution_v2.png)
+![Resolution Settings](../assets/images/operations/resolution_v2.png)
 
 ---
 
@@ -233,7 +322,7 @@ Toggle overlay labels for camera views.
 
 Available in all modes for rapid access to view-specific tools.
 
-![Right-Click Menu](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/right_clicked_v2.png)
+![Right-Click Menu](../assets/images/operations/right_clicked_v2.0.png)
 
 - **View Information**: Detailed stats for the specific view.
 - **Save Image As**: Capture a snapshot.
@@ -245,7 +334,7 @@ Available in all modes for rapid access to view-specific tools.
 
 Customize how a specific view is de-warped.
 
-![Configuration View](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/configuration_v2.png)
+![Configuration View](../assets/images/operations/configuration_v2.png)
 *Transformation Settings*
 
 **Parameters:**
@@ -253,7 +342,7 @@ Customize how a specific view is de-warped.
 - **Zoom**: Control magnification.
 - **Lock AI**: Prevent auto-tracking from moving this view.
 
-![Adjusted Transform](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/adjust_transform_v2.png)
+![Adjusted Transform](../assets/images/operations/camera_information_v2.png)
 *Visual Adjustment Tool*
 
 !!! note "Mouse Press Event"
@@ -266,17 +355,17 @@ Customize how a specific view is de-warped.
 ### Drag to Move
 Click and drag within a view to shift the visible region.
 
-![Mouse Drag](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/mouse_drag.png)
+![Mouse Drag](../assets/images/operations/mouse_drag.png)
 
 ### Double-Click to Expand
 Double-click any view to maximize it to full screen.
 
-![Double-Click](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/double_clicked.png)
+![Double-Click](../assets/images/operations/double_clicked.png)
 
 ### Scroll to Zoom
 Use the mouse wheel to zoom in and out.
 
-![Scroll Zoom](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/scroll_up_down.png)
+![Scroll Zoom](../assets/images/operations/scroll_up_down.png)
 
 !!! note "Tip"
     Use **Transformation** and **Adjusted Transform** features to precisely focus on specific objects while referencing the original image for context.

@@ -44,7 +44,11 @@ Any point on the 2D image plane corresponds directly to specific spatial angles 
 
 This mathematical model normalizes the distorted image onto a virtual sphere, allowing for accurate re-projection into rectilinear (flat) views.
 
-![Fisheye View Angle](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/view_angle.jpg)
+<img
+  src="../assets/images/definition/view_angle.jpg"
+  alt="Fisheye View Angle"
+  style="width: 100%; height: auto; display: block;"
+/>
 
 ### Coordinate System
 
@@ -56,7 +60,11 @@ The system uses a spherical coordinate system defined by the optical axis (Z-axi
 **Azimuthal Angle (β)**
 :   The angle of rotation around the optical axis (Z). It is measured starting from the positive Y-axis (0°) and rotating clockwise.
 
-![Fisheye Angles](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/angle.jpg)
+<img
+  src="../assets/images/definition/angle.jpg"
+  alt="Fisheye Angles"
+  style="width: 100%; height: auto; display: block;"
+/>
 
 !!! note "The Power of Software Correction"
     The sophisticated normalization and re-projection workflow described above is the core engine of Moil Meeting. It allows the software to take a distorted circular image and transform it into readable, natural-looking panoramic or zoomed views in real-time.

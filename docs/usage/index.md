@@ -1,6 +1,6 @@
 # Usage Guide
 
-![Moil Meeting Operations](https://perseverance-tech-tw.github.io/video-conference-app-release/v2.0/build/html/_images/operation.png)
+![Moil Meeting Operations](../assets/images/usage/operation.png)
 *Moil Meeting Application Interface*
 
 This section provides comprehensive guidance on using the **Moil Meeting** application, explaining components, features, and operational procedures to help users maximize the platform's capabilities.
