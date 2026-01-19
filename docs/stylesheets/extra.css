@@ -418,6 +418,10 @@ body,
   transform: translateY(0);
 }
 
+.md-dialog {
+  display: none !important;
+}
+
 @media (max-width: 700px) {
   .mm-toast {
     left: 1rem;
