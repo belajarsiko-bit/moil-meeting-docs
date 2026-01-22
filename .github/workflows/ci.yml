@@ -31,6 +31,9 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy Documentation
+        env:
+          DOCS_VERSION_ID: 2.x
+          DOCS_VERSION_TITLE: "Version 2.x"
+          DOCS_VERSION_ALIAS: latest
         run: |
-
-          mike deploy --push --update-aliases 'Version 2.x'
+          mike deploy --push --update-aliases -t "$DOCS_VERSION_TITLE" "$DOCS_VERSION_ID" "$DOCS_VERSION_ALIAS"
