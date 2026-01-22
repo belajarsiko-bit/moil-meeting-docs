@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Wajib 0 agar history Git terbawa untuk 'mike'
+          fetch-depth: 0 
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -29,6 +29,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Hide Legacy Version Entry
+        run: |
+          mike props "Version 2.x" --set hidden=true --allow-empty || true
 
       - name: Deploy Documentation
         env:
