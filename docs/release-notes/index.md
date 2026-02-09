@@ -32,6 +32,7 @@ Moil Meeting v2.0 is a significant leap forward in usability and control. The ap
 -   **Presentation Focus:** Anypoint transformation tooling for accurate de-warped views.
 -   **Right-Click Context Menu:** View info, snapshots, original view toggle, pause view, and configuration shortcuts.
 -   **Configuration Panel:** Camera info and update checks, view labels, flip orientation, panorama config, resolution, UI scale, and cache management.
+-   **Shortcut Support:** Keyboard shortcuts to assist users with **minimal mouse** usage.
 
 ### Improvements
 

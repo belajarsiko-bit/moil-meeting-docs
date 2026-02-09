@@ -31,12 +31,12 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
 
 ### Download Moil Meeting
 
-1.  Visit the [Video Conference GitHub Repository (Releases)](https://github.com/perseverance-tech-tw/video-conference-using-fisheye/releases/tag/v1.1.42).
+1.  Visit the [Video Conference GitHub Repository (Releases)](https://github.com/perseverance-tech-tw/video-conference-app-release/releases/tag/v2.0.2).
 2.  Download the appropriate installer:
-    *   **Windows**: `FisheyeVideoConferenceSystem-v1.1.6.exe`
-    *   **Linux**: `FisheyeVideoConferenceSystem-v1.1.6-linux.7z`
+    *   **Windows**: `FisheyeVideoConferenceSystemv2.0.3.exe`
+    *   **Linux**: `FisheyeVideoConferenceSystem-v2.0.3-linux.7z`
 
-![Video Conference Repository](../assets/images/install/video_conference_repository.png)
+![Video Conference Repository](../assets/images/install/moilmeet_releasev2.0.3.png)
 *Repository Release Page*
 
 ### Windows Installation
