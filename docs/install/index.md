@@ -31,7 +31,7 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
 
 ### Download Moil Meeting
 
-1.  Visit the [Video Conference GitHub Repository (Releases)](https://github.com/perseverance-tech-tw/video-conference-app-release/releases/tag/v2.0.2).
+1.  Visit the [Video Conference GitHub Repository (Releases)](https://github.com/perseverance-tech-tw/video-conference-app-release/releases/tag/v2.0.3).
 2.  Download the appropriate installer:
     *   **Windows**: `FisheyeVideoConferenceSystemv2.0.3.exe`
     *   **Linux**: `FisheyeVideoConferenceSystem-v2.0.3-linux.7z`
@@ -44,23 +44,23 @@ This guide provides step-by-step instructions to install and run the **Moil Meet
 **Step 1: Run Installer**
 Right-click the installer file and select **Run as Administrator** to ensure proper permissions.
 
-![Run as Administrator](../assets/images/install/run_administrator.png)
+![Run as Administrator](../assets/images/install/instalv2.0.3.png)
 
 **Step 2: Follow Wizard**
 Proceed through the installation wizard, selecting your preferred destination folder.
-![wait installation](../assets/images/install/wait.png)
+![wait installation](../assets/images/install/installingv2.0.3.png)
 
 **Step 3: Access Application**
 After installation, locate the application in your selected folder.
 *   `FisheyeVideoConference.exe` — Launch the application.
 *   `unins000` — Uninstall the application.
 
-![Application Files](../assets/images/install/run_app.png)
+![Application Files](../assets/images/install/uninstall_v2.0.3.png)
 
 **Step 4: Launch**
 You are now ready to use the Moil Meeting system.
 
-![Moil Meeting Application](../assets/images/install/moil_app.png)
+![Moil Meeting Application](../assets/images/install/run_app_v2.0.3.png)
 *Moil Meeting Application Interface*
 
 ### Linux Installation
@@ -97,7 +97,7 @@ This section is for developers who want to run Moil Meeting from source code.
 | Component | Requirement |
 | :--- | :--- |
 | **OS** | Ubuntu or Windows |
-| **Python** | Version 3.7 or higher |
+| **Python** | Version 3.9 or higher |
 | **Tools** | Git installed |
 
 ### Setup Steps
@@ -151,7 +151,7 @@ This section is for developers who want to run Moil Meeting from source code.
 | **Windows Camera** | Ensure OBS Virtual Camera is active *before* launching the app. Run as Administrator if issues persist. |
 | **Linux Boot** | Verify that **Secure Boot** is disabled in your BIOS settings. |
 | **Linux Modules** | Check if the loopback module is loaded: `lsmod | grep v4l2loopback`. |
-| **Developer Env** | Ensure your virtual environment is activated and Python version is >= 3.7. |
+| **Developer Env** | Ensure your virtual environment is activated and Python version is >= 3.9. |
 
 ---
 
