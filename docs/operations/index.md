@@ -18,7 +18,7 @@ The application features several distinct operational modes, accessible via the 
 - **Presentation Mode** — Optimized for content delivery and focus.
 
 <img
-  src="../assets/images/operations/overview.png"
+  src="../assets/images/features/app.png"
   alt="Application Overview"
   style="width: 100%; height: auto; display: block;"
 />
@@ -35,7 +35,7 @@ Welcome to **Moil Meeting**, a comprehensive solution for 360° video conferenci
 Launch the application to access the main interface.
 
 <img
-  src="../assets/images/operations/start.png"
+  src="../assets/images/install/run_app_v2.0.3.png"
   alt="Start Screen"
   style="width: 100%; height: auto; display: block;"
 />
@@ -49,7 +49,7 @@ Click the **START CAMERA** button to initiate the video feed. You will be prompt
 - **Camera URL** — Connect to an IP camera stream.
 
 <img
-  src="../assets/images/operations/original_mode_view.png"
+  src="../assets/images/operations/original_v2.png"
   alt="Original Mode View"
   style="width: 100%; height: auto; display: block;"
 />
@@ -62,21 +62,21 @@ Each source allows for detailed configuration, including resolution and frame ra
 Methods of operation can be switched dynamically. The application defaults to **Original Mode** upon initialization.
 
 <img
-  src="../assets/images/operations/disscusion_mode_view.png"
+  src="../assets/images/operations/disscusion_mode_v2.png"
   alt="Discussion Mode View"
   style="width: 100%; height: auto; display: block;"
 />
 *Discussion Mode*
 
 <img
-  src="../assets/images/operations/patrol_mode_view.png"
+  src="../assets/images/operations/patrol_mode_v2.png"
   alt="Patrol Mode View"
   style="width: 100%; height: auto; display: block;"
 />
 *Patrol Mode*
 
 <img
-  src="../assets/images/operations/presentation_mode_view.png"
+  src="../assets/images/operations/presentation_mode_v2.png"
   alt="Presentation Mode View"
   style="width: 100%; height: auto; display: block;"
 />
@@ -89,7 +89,7 @@ Methods of operation can be switched dynamically. The application defaults to **
 ### Starting the Camera
 
 <img
-  src="../assets/images/operations/select_media_source_v2.png"
+  src="../assets/images/operations/select_media.png"
   alt="Media Source Selection"
   style="width: 100%; height: auto; display: block;"
 />
@@ -97,18 +97,18 @@ Methods of operation can be switched dynamically. The application defaults to **
 
 **Procedure:**
 
-1. Click **START CAMERA** at the bottom of the interface.
-2. Choose your input source in the dialog:
-   - **Open Camera**: For physical devices.
-   - **Load Media**: For file playback.
-   - **Camera URL**: For network streams.
-   - **Token**: For authenticated streams.
-3. Click **OK** to proceed.
+1. Choose your input source in the dialog:
+    
+    - **Open Camera**: For physical devices.
+    - **Load Media**: For file playback.
+    - **Camera URL**: For network streams.
+
+2. Click **Start Camera** to proceed.
 
 ### Camera Controls
 
 <img
-  src="../assets/images/operations/stop_play.png"
+  src="../assets/images/operations/camera_control.png"
   alt="Camera Controls"
   style="width: 100%; height: auto; display: block;"
 />
@@ -120,39 +120,10 @@ Once active, use the control bar to manage the feed:
 - **Stop Camera**: Completely stops the video feed.
 - **Pause Camera**: Freezes the current frame.
 - **Play Camera**: Resumes the feed from a paused state.
+- **Resolution**: Set the graphics quality to High for the best experience.
+- **Language**: Set the application interface language.
 
 ---
-
-## Recording Functions
-
-### Start Recording
-
-1. Click the **Start Recording** button.
-2. A confirmation message, "Recording Started," will appear.
-
-<img
-  src="../assets/images/operations/recording.png"
-  alt="Recording Active"
-  style="width: 100%; height: auto; display: block;"
-/>
-
-*Recording Active*
-
-### Stop Recording
-
-1. Click **Stop Recording**.
-2. A "Recording Finished" confirmation will display the saved file path.
-
-<img
-  src="../assets/images/operations/stop_record.png"
-  alt="Recording Complete"
-  style="width: 100%; height: auto; display: block;"
-/>
-
-*Recording Saved*
-
----
-
 ## Detailed Mode Operations
 
 ### Original Mode
@@ -160,7 +131,7 @@ Once active, use the control bar to manage the feed:
 Displays the full **360-degree fisheye view**. This mode shows the complete, distorted image as captured by the sensor.
 
 <img
-  src="../assets/images/operations/original.png"
+  src="../assets/images/operations/original_v2.png"
   alt="Original Mode"
   style="width: 100%; height: auto; display: block;"
 />
@@ -177,7 +148,7 @@ Displays the full **360-degree fisheye view**. This mode shows the complete, dis
 Designed for multi-participant meetings, this mode creates virtual "cameras" from the single fisheye source.
 
 <img
-  src="../assets/images/operations/disscusion_newversion.png"
+  src="../assets/images/operations/disscusion_mode_v2.png"
   alt="Discussion Mode"
   style="width: 100%; height: auto; display: block;"
 />
@@ -188,7 +159,7 @@ Designed for multi-participant meetings, this mode creates virtual "cameras" fro
 Access settings via the **Config Button**:
 
 <img
-  src="../assets/images/operations/config_v2.png"
+  src="../assets/images/operations/show_panorama.png"
   alt="Config Button"
   style="width: 100%; height: auto; display: block;"
 />
@@ -263,6 +234,36 @@ Focuses on a specific area of interest, such as a whiteboard or speaker, while m
 **Usage:**
 1. Select **Presentation Mode**.
 2. Use **Dialog Transformation** (Right-click) to fine-tune the region of interest.
+## Recording Functions
+
+---
+
+
+### Start Recording
+
+1. Click the **Start Recording** button.
+2. A confirmation message, "Recording Started," will appear.
+
+<img
+  src="../assets/images/operations/recording.png"
+  alt="Recording Active"
+  style="width: 100%; height: auto; display: block;"
+/>
+
+*Recording Active*
+
+### Stop Recording
+
+1. Click **Stop Recording**.
+2. A "Recording Finished" confirmation will display the saved file path.
+
+<img
+  src="../assets/images/operations/stop_record.png"
+  alt="Recording Complete"
+  style="width: 100%; height: auto; display: block;"
+/>
+
+*Recording Saved*
 
 ---
 
