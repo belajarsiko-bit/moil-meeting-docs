@@ -833,12 +833,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#flip-view" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -848,24 +843,29 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#configuration-panel" class="md-nav__link">
+  <a href="#panorama-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration Panel
+        Panorama Settings
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuration Panel">
+    <nav class="md-nav" aria-label="Panorama Settings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#camera-information" class="md-nav__link">
+  <a href="#parameter-setting-panorama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Camera Information
+        Parameter Setting Panorama
       
     </span>
   </a>
@@ -873,10 +873,49 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-labels" class="md-nav__link">
+  <a href="#flip-view-panorama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        View Labels
+        Flip View Panorama
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perspective-transformation-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perspective Transformation Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#original-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Original Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Original Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#field-of-view-fov-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field Of View (FOV) Setting
       
     </span>
   </a>
@@ -884,10 +923,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-controls" class="md-nav__link">
+  <a href="#crosshair" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Advanced Controls
+        Crosshair
       
     </span>
   </a>
@@ -1305,47 +1344,78 @@
 <li>Config <strong>Font Size</strong> and <strong>Position</strong></li>
 <li>Click <strong>Save</strong></li>
 </ol>
-<h2 id="flip-view">Flip View</h2>
+<h3 id="flip-view">Flip View</h3>
 <p>Flip View provides quick-access buttons to flip the image Horizontal or Vertical, along with a Reset Flip View button to revert to the default orientation. </p>
 <hr />
-<h2 id="configuration-panel">Configuration Panel</h2>
-<p>Access system-wide settings via the <strong>Config Button</strong>.</p>
-<h3 id="camera-information">Camera Information</h3>
-<p>Displays technical details about the current video source.</p>
+<h2 id="panorama-settings">Panorama Settings</h2>
 <p><img
-  src="../assets/images/operations/camera_information_v2.png"
-  alt="Camera Information"
+  src="../assets/images/operations/panorama_settings.png"
+  alt="Parameter Setting Panorama"
   style="width: 100%; height: auto; display: block;"
 /></p>
-<ul>
-<li><strong>Model &amp; Version</strong>: Hardware and software identifiers.</li>
-<li><strong>Video Stats</strong>: Resolution and Field of View (FOV).</li>
-<li><strong>Update Check</strong>: Provides a download link if a new version is detected.</li>
-</ul>
-<h3 id="view-labels">View Labels</h3>
-<p>Toggle overlay labels for camera views.</p>
+<p>The Panorama Setting panel is designed to manage and refine the wide-angle panoramic view generated from the fisheye camera source. This configuration ensures that the primary wide-stream display is correctly aligned and cropped for optimal visibility.</p>
+<h3 id="parameter-setting-panorama">Parameter Setting Panorama</h3>
 <p><img
-  src="../assets/images/operations/view_number_v2.png"
-  alt="Show View Number"
+  src="../assets/images/operations/parameter_panorama.png"
+  alt="Parameter Setting Panorama"
   style="width: 100%; height: auto; display: block;"
 />
-<em>Labels Visible</em></p>
+<em>Parameter Setting Panorama</em></p>
+<p>The Parameter Setting allows for granular adjustments to the panoramic projection:</p>
+<p><strong>Settings:</strong></p>
+<ol>
+<li><strong>Alpha Max &amp; Alpha</strong>: Controls the maximum vertical angle and current tilt of the panorama.</li>
+<li><strong>Beta</strong>: Adjusts the horizontal rotation or "panning" offset of the view.</li>
+<li><strong>Crop Controls (Top, Bottom, Left, Right)</strong>: Enables users to trim the edges of the panoramic strip to remove unwanted peripheral areas or lens distortions.</li>
+</ol>
+<h3 id="flip-view-panorama">Flip View Panorama</h3>
 <p><img
-  src="../assets/images/operations/hide_view_number_v2.png"
-  alt="Hide View Number"
+  src="../assets/images/operations/flip_panorama.png"
+  alt="Flip View Panorama"
   style="width: 100%; height: auto; display: block;"
 />
-<em>Labels Hidden</em></p>
-<p><strong>Reset Labels:</strong> Restores default naming and positioning.</p>
-<h3 id="advanced-controls">Advanced Controls</h3>
-<ul>
-<li><strong>Flip Camera</strong>: Correct orientation (Upside, Front, Downside).</li>
-<li><strong>Panorama Config</strong>: Fine-tune the alpha/beta angles and cropping of the panoramic view.</li>
-<li><strong>Resolution</strong>: Adjust output quality per view.</li>
-<li><strong>UI Scale</strong>: Increase or decrease interface size for readability.</li>
-<li><strong>Cache</strong>: Import/Export/Reset configuration cache.</li>
-</ul>
-<p><img alt="Resolution Settings" src="../assets/images/operations/resolution_v2.png" /></p>
+<em>Flip View Panorama</em></p>
+<p>Located at the bottom, Flip View provides quick-toggle buttons to mirror the panoramic stream:</p>
+<p><strong>Options:</strong></p>
+<ol>
+<li><strong>Horizontal</strong>: Flips the image left-to-right.</li>
+<li><strong>Vertical</strong>: Flips the image top-to-bottom.</li>
+<li><strong>Reset Flip View</strong>: A red button to immediately revert all flip adjustments to the default state.</li>
+</ol>
+<hr />
+<h2 id="perspective-transformation-settings">Perspective Transformation Settings</h2>
+<p><img
+  src="../assets/images/operations/transformation_anypoint.png"
+  alt="Flip View Panorama"
+  style="width: 100%; height: auto; display: block;"
+/>
+<em>Perspective Transformation Settings</em></p>
+<p>This feature is designed to help you focus more easily on a specific object by allowing customized transformation adjustments as needed. When you activate the transform, the original appearance of the object (before any transformation) will appear in the corner as a reference, allowing you to compare the changes with the original version. If you wish to revert to the initial state, simply press the Reset button to discard all adjustments and restore the object to its original form. </p>
+<h2 id="original-settings">Original Settings</h2>
+<p><img
+  src="../assets/images/operations/original_settings.png"
+  alt="Flip View Panorama"
+  style="width: 100%; height: auto; display: block;"
+/>
+<em>Original Settings</em></p>
+<h3 id="field-of-view-fov-setting">Field Of View (FOV) Setting</h3>
+<p><img
+  src="../assets/images/operations/fov_original.png"
+  alt="Field Of View Setting"
+  style="width: 100%; height: auto; display: block;"
+/>
+<em>Field Of View (FOV) Setting</em></p>
+<p>The Field of View (FOV) Setting in Moil Meet is a critical calibration tool that allows users to define and visualize the specific capture zones of the fisheye lens. Located within the camera configuration panel, this feature enables precise management of the optical coverage to ensure that all participants and meeting areas are properly accounted for in the processed views.</p>
+<p>In Moil Meet, the Field of View (FOV) Settings provide a clear, color-coded overlay on the Original Image to help users understand exactly what the lens is seeing. The system supports three distinct FOV presets—<strong>FOV 1 (Red)</strong>, <strong>FOV 2 (Green)</strong>, and <strong>FOV 3 (Blue)</strong>—each of which can be customized to a specific degree, such as 120°, 180°, or 240°. By toggling these settings, users can see concentric dashed circles on the raw fisheye feed, which serve as a guide for framing and dewarping.</p>
+<hr />
+<h3 id="crosshair">Crosshair</h3>
+<p><img
+  src="../assets/images/operations/crosshair_original.png"
+  alt="Crosshair View"
+  style="width: 100%; height: auto; display: block;"
+/>
+<em>Crosshair View</em></p>
+<p>The Crosshair is a toggleable visual guide that, when activated by checking the "Show Crosshair" box, projects a prominent red horizontal axis (X) and a green vertical axis (Y) directly over the Original Image. At the exact intersection of these axes lies a blue focal point, which represents the mathematical center of the lens.</p>
 <hr />
 <h2 id="advanced-interactions">Advanced Interactions</h2>
 <h3 id="right-click-context-menu">Right-Click Context Menu</h3>
