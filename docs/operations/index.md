@@ -362,59 +362,105 @@ On Anypoint Mode offers two primary projection methods there are Car Mode and Tu
 2. Config **Font Size** and **Position**
 3. Click **Save**
 
-## Flip View
+### Flip View
  
 Flip View provides quick-access buttons to flip the image Horizontal or Vertical, along with a Reset Flip View button to revert to the default orientation. 
 
+
 ---
 
-## Configuration Panel
-
-Access system-wide settings via the **Config Button**.
-
-### Camera Information
-
-Displays technical details about the current video source.
+## Panorama Settings
 
 <img
-  src="../assets/images/operations/camera_information_v2.png"
-  alt="Camera Information"
+  src="../assets/images/operations/panorama_settings.png"
+  alt="Parameter Setting Panorama"
   style="width: 100%; height: auto; display: block;"
 />
 
-- **Model & Version**: Hardware and software identifiers.
-- **Video Stats**: Resolution and Field of View (FOV).
-- **Update Check**: Provides a download link if a new version is detected.
+The Panorama Setting panel is designed to manage and refine the wide-angle panoramic view generated from the fisheye camera source. This configuration ensures that the primary wide-stream display is correctly aligned and cropped for optimal visibility.
 
-### View Labels
-
-Toggle overlay labels for camera views.
+### Parameter Setting Panorama
 
 <img
-  src="../assets/images/operations/view_number_v2.png"
-  alt="Show View Number"
+  src="../assets/images/operations/parameter_panorama.png"
+  alt="Parameter Setting Panorama"
   style="width: 100%; height: auto; display: block;"
 />
-*Labels Visible*
+*Parameter Setting Panorama*
+
+The Parameter Setting allows for granular adjustments to the panoramic projection:
+
+**Settings:**
+
+1. **Alpha Max & Alpha**: Controls the maximum vertical angle and current tilt of the panorama.
+2. **Beta**: Adjusts the horizontal rotation or "panning" offset of the view.
+3. **Crop Controls (Top, Bottom, Left, Right)**: Enables users to trim the edges of the panoramic strip to remove unwanted peripheral areas or lens distortions.
+
+
+### Flip View Panorama
 
 <img
-  src="../assets/images/operations/hide_view_number_v2.png"
-  alt="Hide View Number"
+  src="../assets/images/operations/flip_panorama.png"
+  alt="Flip View Panorama"
   style="width: 100%; height: auto; display: block;"
 />
-*Labels Hidden*
+*Flip View Panorama*
 
-**Reset Labels:** Restores default naming and positioning.
+Located at the bottom, Flip View provides quick-toggle buttons to mirror the panoramic stream:
 
-### Advanced Controls
+**Options:**
 
-- **Flip Camera**: Correct orientation (Upside, Front, Downside).
-- **Panorama Config**: Fine-tune the alpha/beta angles and cropping of the panoramic view.
-- **Resolution**: Adjust output quality per view.
-- **UI Scale**: Increase or decrease interface size for readability.
-- **Cache**: Import/Export/Reset configuration cache.
+1. **Horizontal**: Flips the image left-to-right.
+2. **Vertical**: Flips the image top-to-bottom.
+3. **Reset Flip View**: A red button to immediately revert all flip adjustments to the default state.
 
-![Resolution Settings](../assets/images/operations/resolution_v2.png)
+---
+
+## Perspective Transformation Settings
+
+<img
+  src="../assets/images/operations/transformation_anypoint.png"
+  alt="Flip View Panorama"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Perspective Transformation Settings*
+
+This feature is designed to help you focus more easily on a specific object by allowing customized transformation adjustments as needed. When you activate the transform, the original appearance of the object (before any transformation) will appear in the corner as a reference, allowing you to compare the changes with the original version. If you wish to revert to the initial state, simply press the Reset button to discard all adjustments and restore the object to its original form. 
+
+## Original Settings
+
+<img
+  src="../assets/images/operations/original_settings.png"
+  alt="Flip View Panorama"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Original Settings*
+
+### Field Of View (FOV) Setting
+
+<img
+  src="../assets/images/operations/fov_original.png"
+  alt="Field Of View Setting"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Field Of View (FOV) Setting*
+
+The Field of View (FOV) Setting in Moil Meet is a critical calibration tool that allows users to define and visualize the specific capture zones of the fisheye lens. Located within the camera configuration panel, this feature enables precise management of the optical coverage to ensure that all participants and meeting areas are properly accounted for in the processed views.
+
+In Moil Meet, the Field of View (FOV) Settings provide a clear, color-coded overlay on the Original Image to help users understand exactly what the lens is seeing. The system supports three distinct FOV presets—**FOV 1 (Red)**, **FOV 2 (Green)**, and **FOV 3 (Blue)**—each of which can be customized to a specific degree, such as 120°, 180°, or 240°. By toggling these settings, users can see concentric dashed circles on the raw fisheye feed, which serve as a guide for framing and dewarping.
+
+---
+
+### Crosshair
+
+<img
+  src="../assets/images/operations/crosshair_original.png"
+  alt="Crosshair View"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Crosshair View*
+
+The Crosshair is a toggleable visual guide that, when activated by checking the "Show Crosshair" box, projects a prominent red horizontal axis (X) and a green vertical axis (Y) directly over the Original Image. At the exact intersection of these axes lies a blue focal point, which represents the mathematical center of the lens.
 
 ---
 
