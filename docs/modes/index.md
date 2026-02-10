@@ -75,7 +75,7 @@ Available across all modes, AI Tracking uses sound localization and motion detec
 -   **Toggleable:** Can be enabled/disabled instantly for manual control when needed.
 
 <img
-  src="../assets/images/modes/ai_tracking_on.png"
+  src="../assets/images/modes/ai_tracking_v2.png"
   alt="AI Tracking"
   style="width: 100%; height: auto; display: block;"
 />

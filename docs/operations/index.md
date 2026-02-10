@@ -164,37 +164,22 @@ Access settings via the **Config Button**:
   style="width: 100%; height: auto; display: block;"
 />
 
-**Features:**
-- **Limit Person**: Choose between 2, 3, 4, 6, or 8 participant views.
-- **View List**: Manage individual views (Pause, Reorder, Configure).
-- **Layout Slider**: Dynamically resize video windows.
-- **Panorama**: Toggle the panoramic strip at the top.
+Panorama View for to show or hide panorama view setting.  
 
 <img
-  src="../assets/images/operations/limit_person.png"
-  alt="Limit Person"
-  style="width: 100%; height: auto; display: block;"
-/>
-*Participant Limit Selection*
-
-**Panorama Toggle:**
-- **Show Panorama**: Enables a wide strip showing the entire room context.
-- **Hide Panorama**: Focuses solely on individual participants.
-
-<img
-  src="../assets/images/operations/right_clicked_v2.png"
-  alt="Right-Click Menu"
+  src="../assets/images/operations/label_config.png"
+  alt="Config Button"
   style="width: 100%; height: auto; display: block;"
 />
 
-*Right-click Context Menu*
+Within Label Configuration, users have the option to show or hide labels or use the Reset Label Default feature to restore original settings.
 
 ### Global Mode
 
 Displays a dual-panoramic strip, effectively "unwrapping" the 360° image into a flat view.
 
 <img
-  src="../assets/images/operations/global_mode.png"
+  src="../assets/images/operations/global_mode_v2.png"
   alt="Global Mode"
   style="width: 100%; height: auto; display: block;"
 />
@@ -202,6 +187,7 @@ Displays a dual-panoramic strip, effectively "unwrapping" the 360° image into a
 *Global Panoramic View*
 
 **Features:**
+
 - **Dual Views**: View two different panoramic angles simultaneously.
 - **Flip Controls**: Orientation adjustment.
 
@@ -217,6 +203,7 @@ Automates monitoring by panning the virtual view across the panoramic scene.
 *Patrol Mode*
 
 **Features:**
+
 - **Instant Activation**: Begins scanning immediately upon selection.
 - **Dynamic Control**: Use the slider to manually override or adjust the view.
 
@@ -232,38 +219,152 @@ Focuses on a specific area of interest, such as a whiteboard or speaker, while m
 *Presentation Focus*
 
 **Usage:**
+
 1. Select **Presentation Mode**.
-2. Use **Dialog Transformation** (Right-click) to fine-tune the region of interest.
-## Recording Functions
+2. Use **Double Click**to show view presented
+.
+## Recorded Video
 
----
+The Recorded Video feature in Moil Meet allows users to record live video sessions directly from the application. Once is started, a clear status indicator such as “Recording has started” and a REC timer appears on the screen to inform users that the recording is active.  
 
+<img
+  src="../assets/images/operations/record_video.png"
+  alt="Presentation Mode"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Recorded Video*
 
 ### Start Recording
 
 1. Click the **Start Recording** button.
-2. A confirmation message, "Recording Started," will appear.
+2. A confirmation message, "Recording Video Start," will appear.
 
 <img
-  src="../assets/images/operations/recording.png"
+  src="../assets/images/operations/start_stop_record.png"
   alt="Recording Active"
   style="width: 100%; height: auto; display: block;"
 />
 
-*Recording Active*
+*Start Stop Record*
 
 ### Stop Recording
 
 1. Click **Stop Recording**.
-2. A "Recording Finished" confirmation will display the saved file path.
+2. A "Recording Stop and Saved" confirmation will display the saved file path.
+
+
+---
+
+## Cache Menu
 
 <img
-  src="../assets/images/operations/stop_record.png"
-  alt="Recording Complete"
+  src="../assets/images/operations/cache.png"
+  alt="Recording Active"
   style="width: 100%; height: auto; display: block;"
 />
+*Cache Menu*
 
-*Recording Saved*
+**Features:**
+
+- **Reset Cache**: Reset config for all view.
+- **Export Cache**: Export config to device.
+- **Import Cache**: Import config from device.
+- **Save As History**: Save config along meeting.
+
+---
+
+## About Menu
+
+<img
+  src="../assets/images/operations/about.png"
+  alt="Recording Active"
+  style="width: 100%; height: auto; display: block;"
+/>
+*About Menu*
+
+**Features:**
+
+- **Information**: Displays technical details about the current video source.
+- **Shortcut**: Support shortcut keyboard fully.
+
+---
+
+## View List
+
+<img
+  src="../assets/images/operations/view_list.png"
+  alt="Recording Active"
+  style="width: 100%; height: auto; display: block;"
+/>
+*View List *
+
+**Features:**
+
+- **Limit Person**: Choose between 2, 3, 4, 6, 8 or 9 participant views.
+- **View List**: Manage individual views (Pause, Reorder, Configure).
+
+---
+
+## Anypoint Settings
+
+<img
+  src="../assets/images/operations/anypoint_settings.png"
+  alt="Anypoint Settings"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Anypoint Settings*
+
+The Anypoint Settings panel provides advanced tools for manipulating and refining specific camera views from a fisheye source.
+
+
+
+### Anypoint Mode
+
+<img
+  src="../assets/images/operations/anypoint_mode.png"
+  alt="Anypoint Settings"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Anypoint Settings*
+
+On Anypoint Mode offers two primary projection methods there are Car Mode and Tube Mode. These modes determine how the fisheye image is mathematically remapped to create a natural-looking rectangular view.
+
+### Parameter Settings
+
+<img
+  src="../assets/images/operations/settings_parameter.png"
+  alt="Anypoint Settings"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Parameter Settings*
+
+
+**Settings:**
+
+1. **Coordinates (X, Y)**: Adjust the center point of the focus area
+2. **Alpha Max, Alpha, Beta**: These three parameters form a group of settings used to control the viewing angle in the panorama.
+3. **Left, Right, Top, Bottom**: These parameters are used to crop certain parts of the panorama.
+3. **Rotate Original and Anypoint**: Rotates the original camera/frame view. Range rotation -180° to +180° Positive values for Rotate clockwise and Negative values for Rotate counterclockwise. The Rotate Anypoint feature allows users to adjust the orientation of the final video output with a range from -180° to +180°.
+
+### Edit Label
+
+<img
+  src="../assets/images/operations/edit_label.png"
+  alt="Right-Click Menu"
+  style="width: 100%; height: auto; display: block;"
+/>
+*Edit Label*
+
+
+**Procedure:**
+
+1. **Input** new label
+2. Config **Font Size** and **Position**
+3. Click **Save**
+
+## Flip View
+ 
+Flip View provides quick-access buttons to flip the image Horizontal or Vertical, along with a Reset Flip View button to revert to the default orientation. 
 
 ---
 
