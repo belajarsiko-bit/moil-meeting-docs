@@ -470,31 +470,17 @@ The Crosshair is a toggleable visual guide that, when activated by checking the 
 
 Available in all modes for rapid access to view-specific tools.
 
-![Right-Click Menu](../assets/images/operations/right_clicked_v2.0.png)
+![Right-Click Menu](../assets/images/operations/right-click.png)
 
 - **View Information**: Detailed stats for the specific view.
 - **Save Image As**: Capture a snapshot.
 - **Show Original Image**: Quickly toggle to the raw fisheye feed.
 - **Pause View**: Freeze a specific quadrant.
 - **Configuration View Setting**: Deep-dive into Anypoint transformation parameters.
-
-### Anypoint Transformation
-
-Customize how a specific view is de-warped.
-
-![Configuration View](../assets/images/operations/configuration_v2.png)
-*Transformation Settings*
-
-**Parameters:**
-- **Alpha/Beta**: Adjust the viewing angle.
-- **Zoom**: Control magnification.
-- **Lock AI**: Prevent auto-tracking from moving this view.
-
-![Adjusted Transform](../assets/images/operations/camera_information_v2.png)
-*Visual Adjustment Tool*
-
-!!! note "Mouse Press Event"
-    Mouse interactions significantly enhance navigation control across all modes.
+- **Adjust Perspective Transformation**: Quick access to Perspective Transformation Settings
+- **Zoom View**: Zoom view for Zoom In, Zoom Out and Reset Zoom
+- **Rotate Original and Anypoint**: Rotate view for Rotate Left, Rotate Right and Reset Rotate
+- **Flip View**: Flip view for Horizontal, Vertical and Reset Flip View
 
 ---
 
